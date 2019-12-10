@@ -1,3 +1,11 @@
-  #Heading{
-    background-color: #000080;
+#Heading{
+  /*  background-color: #000080;*/
+    margin-top: 0px;
+    line-height: 75%;
   }
+#navigation{
+  line-height: 110%;
+}
+.subtext{
+
+}
