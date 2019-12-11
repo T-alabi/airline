@@ -2,10 +2,13 @@
   /*  background-color: #000080;*/
     margin-top: 0px;
     line-height: 75%;
-  }
+    text-align: center;
+ }
 #navigation{
   line-height: 110%;
 }
 .subtext{
-
+font-style: italic;
+}
+.DesignElement{
 }
