@@ -6,9 +6,31 @@
  }
 #navigation{
   line-height: 110%;
+  padding-left: 100px;
+}
+#airlineSign{
+  font-size: 30px;
+  text-align: left;
+  line-height: normal;
 }
 .subtext{
 font-style: italic;
 }
 .DesignElement{
+}
+.siteBody{
+  padding-left: 40px;
+  padding-right: 55px;
+}
+/*link stuff*/
+a:link{
+  Color: black;
+  text-decoration: none;
+}
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: navy blue;
 }
