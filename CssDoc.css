@@ -32,5 +32,9 @@ a:visited{
   color: black;
 }
 a:hover{
-  color: navy blue;
+  color: #f5b032;
+}
+.SocialMedia a.SocialLink:hover{
+  color: #f5b032;
+
 }
