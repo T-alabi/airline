@@ -6,11 +6,12 @@
  }
  #navigation{
    line-height: 110%;
-   padding-left: 100px;
+   text-align: right;
  }
 #airlineSign{
   font-size: 30px;
   text-align: left;
+  padding-left: 50px;
   line-height: normal;
 }
 .subtext{
@@ -26,13 +27,13 @@ font-style: italic;
 .dropdown {
   position: relative;
   display: inline-block;
+  text-align: left;
 }
 .dropdown-content {
   display: none;
   position: absolute;
-  /* background-color: #f9f9f9; */
+  background-color: #FFFFFF;
   min-width: 160px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
   z-index: 1;
 }
 .dropdown-content a {
@@ -59,5 +60,4 @@ a:hover{
 }
 .SocialMedia a.SocialLink:hover{
   color: #f5b032;
-
 }
