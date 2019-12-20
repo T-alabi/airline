@@ -23,6 +23,16 @@ font-style: italic;
   padding-left: 40px;
   padding-right: 55px;
 }
+.Destination{
+  padding: 14px 25px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  outline-style: solid;
+  outline-width: medium;
+  outline-color: navy;
+}
 /* dropdown */
 .dropdown {
   position: relative;
