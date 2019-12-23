@@ -73,15 +73,25 @@ font-style: italic;
   display: block;
 }
 /* link */
-a:link {
-  text-decoration: none;
-}
-a:visited {
+a {
   text-decoration: none;
 }
 a:hover {
   color: #ff8f29;
 }
-.SocialMedia a.SocialLink:hover {
-  color: #ff8f29;
+.Destination:link {
+  color: black;
+  text-decoration: none;
+}
+.Destination:visited {
+  color: black;
+  text-decoration: none;
+}
+.SocialLink:link {
+  color: black;
+  text-decoration: none;
+}
+.SocialLink:visited {
+  color: black;
+  text-decoration: none;
 }
