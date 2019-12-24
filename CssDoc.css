@@ -73,6 +73,17 @@ font-style: italic;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*form*/
+.Submit{
+  padding: 20px;
+  color: white;
+  background-color: #15273a;
+  text-decoration: none;
+  border: none;
+}
+.Submit:hover{
+  background-color: #ff8f29;
+}
 /*footer*/
 .SocialMedia{
   position: fixed;
