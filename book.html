@@ -38,7 +38,25 @@
   <body class = "siteBody">
     <h1>Book</h1>
 
-    
+      <form>
+  	     <input type="radio" name="triptype" value="roundtrip" onclick="roundtrip();" checked="checked">Round Trip</input>
+         <input type="radio" name="triptype" value="oneway" onclick="oneway();">One Way</input><br><br>
+
+         <label for="from">From</label>
+         <label for="to">To</label><br>
+         <input type="text" id="from"></input>
+  	     <input type="text" id="to"></input><br><br>
+
+         <label for="date1">Depart</label><br>
+         <input type="date" id="date1"></input><br>
+         <label for="date2" id="return">Return</label><br>
+  	     <input type="date" id="date2"></input><br><br>
+
+         <label for="passengers">Passengers</label><br>
+         <input type="number" id="passengers"></input><br><br>
+
+         <button type = "button">Find Flights</button>
+     </form>
 
     <footer class="SocialMedia">
       <h5>Social Media</h5>
