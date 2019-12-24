@@ -41,7 +41,18 @@
       <h4><i>Apply today and become a part of the team!</i></h4>
 
       <h2>Requirements</h2>
-      <p><i>What to Know Before You Apply</i></p>
+      <p><i>For Flight Attendents</i></p> 
+      <p>  In order to be considered, you must:</p>
+
+      <ul>
+        <li>Be atleast 21 years of age at thr time of applying</li>
+        <li>Be eligoble to work in the U.S.</li>
+        <li>Have felxible hours</li>
+        <li>Be prepared for physically demaning tasks if the need arises</li>
+        <li>Take and pass a Department of Transportation Drug Test</li>
+        <li>Comply with uniform guidelines</li>
+      </ul>
+
 
 <h2>Apply Here!</h2>
 
@@ -55,10 +66,22 @@
       <label>Phone number: <input type="number" name="Phone Number"  /> <br/></label>
 
       <label >
-      Gender: <input type="radio" name="Gender" value="Other"/>Other
-      <input type="radio" name="Gender" value="Female"/>Female
-      <input type="radio" name="Gender" value="Male"/>Male
+        Gender:
+        <input type="radio" name="Gender" value="Other"/>Other
+        <input type="radio" name="Gender" value="Female"/>Female
+        <input type="radio" name="Gender" value="Male"/>Male
+      </label> <br /> <br />
+
+      <label>
+        What Are You Applying For? <br />
+        <label> Flight Attendent</label>  <input type="radio" name="Position" Value="Flight Attendent" onclick="AttendentApp();" checked="checked"/>
+        <label>Pilot</label>  <input type="radio" name="Position" Value="Pilot" onclick="PilotApp();"/>
       </label>
+
+      <label> <!--for Flight attendent stuff-->
+
+      </label>
+
     </form>
 
     <footer class="SocialMedia">

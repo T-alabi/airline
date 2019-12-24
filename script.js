@@ -7,3 +7,11 @@ function oneway() {
   document.getElementById("return").style.display = "none";
   document.getElementById("date2").style.display = "none";
 }
+
+function AttendentApp() {
+
+}
+
+function PilotApp(){
+
+}
