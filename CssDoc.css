@@ -104,6 +104,7 @@ a:hover {
 .SocialLink:link {
   color: white;
   text-decoration: none;
+  padding-right: 5px;
 }
 .SocialLink:visited {
   color: white;
