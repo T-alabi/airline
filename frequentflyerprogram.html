@@ -9,30 +9,35 @@
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="CssDoc.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
     <!-- javascript -->
     <script src="script.js"></script>
 
-    <a href="home.html" id="airlineSign">VENTUS AIRLINES</a>
-    <nav id="navigation">
-      <a href="aboutus.html">ABOUT US</a>
-      <a href="jointheteam.html">JOIN THE TEAM</a>
-      <div class="dropdown">
-        <a href="flightinfo.html" class="dropbtn">FLIGHT INFORMATION</a>
-        <div class="dropdown-content">
-          <a href="book.html">BOOK</a>
-          <a href="mytrips.html">MY TRIPS</a>
-          <a href="flightstatus.html">FLIGHT STATUS</a>
-          <a href="timetable.html">TIMETABLE</a>
+    <div id="header">
+
+      <a href="home.html" id="airlineSign">VENTUS AIRLINES</a>
+      <div class="navigation">
+        <a href="aboutus.html" class="navelement">ABOUT US</a>
+        <a href="jointheteam.html" class="navelement">JOIN THE TEAM</a>
+        <div class="dropdown">
+          <a href="flightinfo.html" class="navelement" id="dropbtn">FLIGHT INFORMATION</a>
+          <div class="dropdown-content">
+            <a href="book.html" class="navelement">BOOK</a>
+            <a href="mytrips.html" class="navelement">MY TRIPS</a>
+            <a href="flightstatus.html" class="navelement">FLIGHT STATUS</a>
+            <a href="timetable.html" class="navelement">TIMETABLE</a>
+          </div>
         </div>
+        <a href="frequentflyerprogram.html" class="navelement">FREQUENT FLYER PROGRAM</a>
       </div>
-      <a href="frequentflyerprogram.html">FREQUENT FLYER PROGRAM</a>
-    </nav>
+
+    </div>
 
   </head>
 
   <body class = "siteBody">
     <h2>Join The <i>Frequent Flyer Program</i></h2>
-    <p>Join the frequent flyer program! With this exclusive feature of <strong>Ventus Airlines</strong>, you can earn miles <br /> that can total up to a free trip! You can spend your miles any way you want. Any time! Any Day!</p>
+    <p>Join the frequent flyer program! With this exclusive feature of <strong>Ventus Airlines</strong>, you can earn miles <br> that can total up to a free trip! You can spend your miles any way you want. Any time! Any Day!</p>
 
     <h3>How are points awarded?</h3>
      <p>The following conditions must be met if you want to earn points from a flight purchase:</p>
@@ -53,14 +58,15 @@
 
     <h3>Are you ready to sign up?</h3>
     <h4>Join the <i>Frequent Flyer Program</i> Today!</h4>
-  </body>
 
-  <footer class="SocialMedia">
-    <h5>Social Media</h5>
-      <a href="https://www.facebook.com/">Facebook</a>
-      <a href="https://www.instagram.com/?hl=en">Instagram</a>
-      <a href="https://twitter.com/">Twitter</a>
-      <a href="https://www.google.com/gmail/about/" class="SocialLink">Questions? Email Us!</a>
-  </footer>
+    <footer class="SocialMedia">
+      <h5>Social Media</h5>
+      <a href="https://www.facebook.com/" class="SocialLink" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/?hl=en" class="SocialLink" target="_blank">Instagram</a>
+      <a href="https://twitter.com/" class="SocialLink" target="_blank">Twitter</a>
+      <a href="https://www.google.com/gmail/about/" class="SocialLink" target="_blank">Questions? Email Us!</a>
+    </footer>
+
+  </body>
 
 </html>
