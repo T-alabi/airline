@@ -9,9 +9,10 @@ function oneway() {
 }
 
 function AttendentApp() {
-
+document.getElementById("AttendentApplication").style.display= "block";
 }
 
 function PilotApp(){
+  document.getElementById("AttendentApplication").style.display= "none";
 
 }
