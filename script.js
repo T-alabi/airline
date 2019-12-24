@@ -10,9 +10,11 @@ function oneway() {
 
 function AttendentApp() {
 document.getElementById("AttendentApplication").style.display= "block";
+document.getElementById("PilotApplication").style.display="none";
 }
 
 function PilotApp(){
   document.getElementById("AttendentApplication").style.display= "none";
+  document.getElementById("PilotApplication").style.display="blockS";
 
 }
