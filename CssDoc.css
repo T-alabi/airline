@@ -72,6 +72,16 @@ font-style: italic;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+/*footer*/
+.SocialMedia{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #15273a;
+  Color: white;
+  text-align: center;
+}
 /* link */
 a {
   text-decoration: none;
@@ -91,11 +101,11 @@ a:hover {
   color: #ff8f29;
 }
 .SocialLink:link {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .SocialLink:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .SocialLink:hover {
