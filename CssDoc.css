@@ -86,6 +86,7 @@ font-style: italic;
 }
 /*footer*/
 .SocialMedia{
+  font-family: 'Lato', sans-serif;
   position: fixed;
   left: 0;
   bottom: 0;

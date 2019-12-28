@@ -10,6 +10,7 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="CssDoc.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!-- javascript -->
     <script src="script.js"></script>
 
@@ -36,7 +37,7 @@
   </head>
 
   <body class = "siteBody">
-    <h1>Book</h1>
+    <h1>Book a Flight</h1>
 
       <form>
   	     <input type="radio" name="triptype" value="roundtrip" onclick="roundtrip();" checked="checked">Round Trip</input>
@@ -44,18 +45,30 @@
 
          <label for="from">From</label>
          <label for="to">To</label><br>
-         <input type="text" id="from"></input>
-  	     <input type="text" id="to"></input><br><br>
+         <input type="text" id="from" required></input>
+  	     <input type="text" id="to" required></input><br><br>
 
          <label for="date1">Depart</label><br>
-         <input type="date" id="date1"></input><br>
+         <input type="date" id="date1" required></input><br>
          <label for="date2" id="return">Return</label><br>
-  	     <input type="date" id="date2"></input><br><br>
+  	     <input type="date" id="date2"></input><br>
+         <!-- should 'return' be required ? -->
+
+         <input type="checkbox" name="dateflexibility"></input>
+         <label for="to">My Dates Are Flexible</label><br><br>
+
+         <input type="radio" name="class" value="economy" checked="checked">Economy Class</input><br>
+         <input type="radio" name="class" value="business">Business Class</input><br>
+         <input type="radio" name="class" value="first">First Class</input><br><br>
+         <!-- other classes ? -->
 
          <label for="passengers">Passengers</label><br>
-         <input type="number" id="passengers"></input><br><br>
+         <input type="number" id="passengers" required></input><br><br>
+         <!-- children, adults, seniors ? -->
 
-      <!--   <button type = "button">Find Flights</button> -->
+         <!-- mileage program ? -->
+         <!-- promotion / certificate code ? -->
+
         <input type="submit" name="Find Flights" class="Submit" value="Find Flights"/>
      </form>
 

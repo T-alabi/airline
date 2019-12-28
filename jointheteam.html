@@ -10,6 +10,7 @@
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="CssDoc.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <!-- javascript -->
     <script src="script.js"></script>
 
@@ -43,14 +44,14 @@
     <div>
       <h2>Requirements</h2>
 
-      <p><i>For Flight Attendents</i></p>
+      <p><i>For Flight Attendants</i></p>
       <p>  In order to be considered, you must:</p>
 
       <ul>
-        <li>Be atleast 21 years of age at the time of applying</li>
-        <li>Be eligoble to work in the U.S.</li>
-        <li>Have felxible hours</li>
-        <li>Be prepared for physically demaning tasks if the need arises</li>
+        <li>Be at least 21 years of age at the time of application</li>
+        <li>Be eligible to work in the U.S.</li>
+        <li>Have flexible hours</li>
+        <li>Be prepared for physically demanding tasks if the need arises</li>
         <li>Take and pass a Department of Transportation Drug Test</li>
         <li>Comply with uniform guidelines</li>
         <li><i>Preferably</i> speak more than one language</li>
@@ -65,10 +66,10 @@
       <p>  In order to be considered, you must:</p>
 
       <ul>
-        <li>Be atleast 21 years of age at the time of applying</li>
-        <li>Be eligoble to work in the U.S.</li>
-        <li>Hold an Air Transport Pilot certificate (ATP)</li>
-        <li>Have (atleast) a second class medical certificate</li>
+        <li>Be at least 21 years of age at the time of application</li>
+        <li>Be eligible to work in the U.S.</li>
+        <li>Hold an Air Transport Pilot (ATP) certificate</li>
+        <li>Have (at least) a second class medical certificate</li>
         <li>Take and pass a Department of Transportation Drug Test</li>
         <li>Comply with uniform guidelines</li>
         <li>Have previous flight experience</li>
@@ -78,37 +79,39 @@
 <h2>Apply Here!</h2>
 
     <form action="">
-      <label>  Contact Information</label> <br />
+      <label>Contact Information</label> <br />
 
-      <label> First name:   <input type="text" name="First Name" required/> </label>
-      <label>Middle Name: <input type="text" name="Middle inital"/> </label>
-      <label>Last Name: <input type="text" name="Last Name" required/> </label> <br /><br />
+      <label>First Name: <input type="text" name="First Name" required/></label>
+      <label>Middle Name: <input type="text" name="Middle inital"/></label>
+      <label>Last Name: <input type="text" name="Last Name" required/></label><br /><br />
 
-      <label>Phone number: <input type="number" name="Phone Number" required /> <br/></label>
+      <label>Email: <input type="email" name="Email" required /></label><br/><br/>
 
-      <label >
+      <label>Phone Number: <input type="tel" name="Phone Number" required /></label><br/><br/>
+
+      <label>
         Gender:
         <input type="radio" name="Gender" value="Other" required value="1"/>Other
         <input type="radio" name="Gender" value="Female"/>Female
         <input type="radio" name="Gender" value="Male"/>Male
-      </label> <br /> <br />
+      </label><br /><br />
 
       <label>
         What Are You Applying For? <br />
-        <label> Flight Attendent</label>  <input type="radio" name="Position" Value="Flight Attendent" onclick="AttendentApp();" checked="checked"/>
-        <label>Pilot</label>  <input type="radio" name="Position" Value="Pilot" onclick="PilotApp();"/>
-      </label><br /> <br />
+        <input type="radio" name="Position" Value="Flight Attendant" onclick="AttendantApp();" checked="checked"/><label>Flight Attendant</label>
+        <input type="radio" name="Position" Value="Pilot" onclick="PilotApp();"/><label>Pilot</label>
+      </label><br /><br />
 
       <label id="PilotApplication">
-<!--the piolet stuff goes here. IF there is extra-->
+<!--the pilot stuff goes here. IF there is extra-->
       </label>
 
-      <label  id="AttendentApplication"> <!--for Flight attendent stuff-->
-        What languages (other than engligh) do you speak fluently? <br />
-          <input type="checkbox" name="language 1" value="Spanish"/>Spanish<br/>
-          <input type="checkbox" name="language 2" Value="Chinese" /> Chinese<br />
-          <input type="checkbox" name="language 3" value="French"/>French<br />
-          <input type="checkbox" name="language 4" value="Tagalog" />Tagalog<br />
+      <label id="AttendantApplication"> <!--for Flight attendent stuff-->
+        What languages (other than English) do you speak fluently? <br />
+          <input type="checkbox" name="language" value="Spanish"/>Spanish<br/>
+          <input type="checkbox" name="language" Value="Chinese" />Chinese<br />
+          <input type="checkbox" name="language" value="French"/>French<br />
+          <input type="checkbox" name="language" value="Tagalog" />Tagalog<br />
           <!--Css the checkboxes-->
       </label> <br />
 
@@ -116,7 +119,7 @@
         Are you legally allowed to work in the United States?<br />
         <input type="radio" name="authorized" value="yes" required value="1"/>Yes <br />
         <input type="radio" name="authorized" value="no" />No<br />
-      </label>
+      </label><br />
 
       <label>
         Where did you receive your training?
