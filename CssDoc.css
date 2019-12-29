@@ -8,6 +8,7 @@ font-style: italic;
 }
 .DesignElement {
 }
+use css.less to make easier to understand?
 */
 
 .siteBody {
@@ -120,7 +121,8 @@ font-style: italic;
 .Submit:hover{
   background-color: #ff8f29;
 }
-
+.FrequentFlyers{
+}
 /*footer*/
 .SocialMedia{
   font-family: 'Lato', sans-serif;

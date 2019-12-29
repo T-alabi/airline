@@ -79,24 +79,25 @@
 <h2>Apply Here!</h2>
 
     <form action="">
-      <label>Contact Information</label> <br />
+      <label  >Contact Information</label> <br />
 
-      <label>First Name: <input type="text" name="First Name" required/></label>
-      <label>Middle Name: <input type="text" name="Middle inital"/></label>
-      <label>Last Name: <input type="text" name="Last Name" required/></label><br /><br />
+      <label  >First Name: <input type="text" name="First Name" required/></label>
+      <label  >Middle Name: <input type="text" name="Middle Name"/></label>
+      <label  >Last Name: <input type="text" name="Last Name" required/></label><br /><br />
 
-      <label>Email: <input type="email" name="Email" required /></label><br/><br/>
+      <label  >Email: <input type="email" name="Email" required /></label><br/><br/>
 
-      <label>Phone Number: <input type="tel" name="Phone Number" required /></label><br/><br/>
+      <label  >
+         Number: <input type="number" name="Phone Number" required /></label><br/><br/>
 
       <label>
-        Gender:
+        Gender: <br />
         <input type="radio" name="Gender" value="Other" required value="1"/>Other
         <input type="radio" name="Gender" value="Female"/>Female
         <input type="radio" name="Gender" value="Male"/>Male
       </label><br /><br />
 
-      <label>
+      <label  >
         What Are You Applying For? <br />
         <input type="radio" name="Position" Value="Flight Attendant" onclick="AttendantApp();" checked="checked"/><label>Flight Attendant</label>
         <input type="radio" name="Position" Value="Pilot" onclick="PilotApp();"/><label>Pilot</label>
@@ -106,7 +107,7 @@
 <!--the pilot stuff goes here. IF there is extra-->
       </label>
 
-      <label id="AttendantApplication"> <!--for Flight attendent stuff-->
+      <label   id="AttendantApplication"> <!--for Flight attendent stuff-->
         What languages (other than English) do you speak fluently? <br />
           <input type="checkbox" name="language" value="Spanish"/>Spanish<br/>
           <input type="checkbox" name="language" Value="Chinese" />Chinese<br />
@@ -115,18 +116,18 @@
           <!--Css the checkboxes-->
       </label> <br />
 
-      <label>
+      <label  >
         Are you legally allowed to work in the United States?<br />
         <input type="radio" name="authorized" value="yes" required value="1"/>Yes <br />
         <input type="radio" name="authorized" value="no" />No<br />
       </label><br />
 
-      <label>
+      <label  >
         Where did you receive your training?
         <input type="text" name="Education" required/>
       </label> <br /> <br />
 
-      <label>
+      <label  >
         Please paste a copy of your resume here: <br />
         <textarea name="Resume" required> </textarea>
       </label><br />
