@@ -16,5 +16,11 @@ document.getElementById("PilotApplication").style.display="none";
 function PilotApp(){
   document.getElementById("AttendantApplication").style.display= "none";
   document.getElementById("PilotApplication").style.display="blockS";
-
+}
+function ConfirmEmail(){
+  var email = document.getElementById("email").value
+          var confEmail = document.getElementById("confEmail").value
+          if(email != confEmail) {
+              alert('Email Not Matching!');
+          }
 }
