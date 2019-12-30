@@ -26,6 +26,7 @@ use css.less to make easier to understand?
   outline-width: medium;
   outline-color: navy;
 }
+/*login*/
 
 /* header / navigation bar */
 #header {
@@ -85,6 +86,37 @@ use css.less to make easier to understand?
 }
 #Login:hover {
   color: #ff8f29;
+}
+#LoginForm{
+  padding: 25px;
+  text-align: center;
+}
+.PopLogin{
+  display: none;
+ top: 50;
+ right: 15px;
+ border: 3px solid #ff8f29;
+ background-color: #ff8f29;
+}
+.loginBtn{
+background-color: green;
+color: white;
+border: none;
+padding: 15px 15px 10px 15px;
+}
+.CloseBtn{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 15px 15px 10px 15px;
+}
+.PopLogin input[type=text], .PopLogin input[type=password] {
+  width: 25%;
+  padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border: none;
+  background: #f1f1f1;
 }
 /* home */
 .shape {

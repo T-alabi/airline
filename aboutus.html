@@ -30,7 +30,7 @@
           </div>
         </div>
         <a href="frequentflyerprogram.html" class="navelement">FREQUENT FLYER PROGRAM</a>
-          <a hred="login-signup.html"id="Login" class="navelement">LOGIN</a>
+        <button id="Login" class="navelement" onclick="OpenLogin();">LOGIN</button>
       </div>
 
     </div>
@@ -38,6 +38,17 @@
   </head>
 
   <body class = "siteBody">
+    <!--login stuff -->
+      <div class="PopLogin" id="LoginForm">
+        <form action="">
+
+          <label><b>Email:</b><input type="text" placeholder="Enter Email" name="email" required></label><br />
+          <label><b>Password:</b><input type="password" placeholder="Enter Password" name="Password" required></label><br /><br />
+
+          <button type="submit" class="loginBtn">Login</button>
+          <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
+        </form>
+      </div>
 
     <!-- animation -->
 

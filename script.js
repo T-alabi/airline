@@ -29,3 +29,11 @@ function FormComplete() {
   document.getElementById("form").style.display = "none";
 }
 /*can you style alert boxes?*/
+function OpenLogin() {
+  document.getElementById("LoginForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("LoginForm").style.display = "none";
+  document.getElementById("loginSign").style.display = "none";
+}
