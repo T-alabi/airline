@@ -130,9 +130,13 @@ padding: 15px 15px 10px 15px;
   padding-left: 20px;
   color: white;
   font-family: 'Lato', sans-serif;
+  align-items: center;
 }
 .shape2 {
   width: 415px;
+}
+.shape3{
+  height: 70px;
 }
 .headingtext {
   font-family: 'Lato', sans-serif;
@@ -155,6 +159,9 @@ padding: 15px 15px 10px 15px;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.home-content{
+  text-align: center;
 }
 
 /*form*/

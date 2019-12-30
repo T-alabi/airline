@@ -35,5 +35,4 @@ function OpenLogin() {
 
 function closeForm() {
   document.getElementById("LoginForm").style.display = "none";
-  document.getElementById("loginSign").style.display = "none";
 }
