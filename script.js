@@ -24,3 +24,8 @@ function ConfirmEmail(){
               alert('Email Not Matching!');
           }
 }
+function submit(){
+  alert("The Form Has been Submitted. Thank you!");
+  document.getElementById("form").style.display = "none";
+}
+/*can you style alert boxes?*/
