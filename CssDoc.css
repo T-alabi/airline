@@ -40,6 +40,7 @@ use css.less to make easier to understand?
   letter-spacing: 3.5px;
   margin-right: 75px;
 }
+
 .navigation {
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
@@ -70,7 +71,21 @@ use css.less to make easier to understand?
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/*log in*/
+#Login{
+  text-decoration: none;
+  padding: 0;
+  border: none;
+  background: none;
+  margin-right: 12px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  text-align: right;
+  color: white
+}
+#Login:hover {
+  color: #ff8f29;
+}
 /* home */
 .shape {
   height: 50px;

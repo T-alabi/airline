@@ -24,7 +24,7 @@ function ConfirmEmail(){
               alert('Email Not Matching!');
           }
 }
-function submit(){
+function FormComplete() {
   alert("The Form Has been Submitted. Thank you!");
   document.getElementById("form").style.display = "none";
 }
