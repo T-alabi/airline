@@ -16,16 +16,7 @@ use css.less to make easier to understand?
   padding-right: 55px;
   margin-bottom: 0px;
 }
-.Destination {
-  padding: 14px 25px;
-  margin: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  outline-style: solid;
-  outline-width: medium;
-  outline-color: navy;
-}
+
 /*login*/
 
 /* header / navigation bar */
@@ -170,7 +161,18 @@ padding: 15px 15px 10px 15px;
   transform: translate(-50%, -50%);
 }
 .home-content{
+  font-family: 'Lato', sans-serif;
   text-align: center;
+}
+.Destination {
+  padding: 14px 25px;
+  margin: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  outline-style: solid;
+  outline-width: medium;
+  outline-color: navy;
 }
 
 /*form*/
