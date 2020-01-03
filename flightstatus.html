@@ -52,6 +52,21 @@
 
     <h1>Flight Status</h1>
 
+    <form onsubmit="submit()">
+      <label for="from">From</label>
+      <label for="to">To</label><br>
+      <input type="text" id="from" required></input>
+      <input type="text" id="to" required></input><br><br>
+
+      <label for="flightNumber">Flight Number</label><br>
+      <input type="number" id="flightNumber" required></input><br><br>
+
+      <label for="date">Date</label><br>
+      <input type="date" id="date"></input><br><br>
+
+      <input type="submit" name="Search" class="Submit" value="Search"/>
+    </form>
+
     <footer class="SocialMedia">
       <h5>Social Media</h5>
       <a href="https://www.facebook.com/" class="SocialLink" target="_blank"><img src="images/facebook.png" style="height: 35px; width: 35px;"></a>

@@ -132,9 +132,13 @@ padding: 15px 15px 10px 15px;
 }
 .shape2 {
   height: 50px;
+  width: 410px;
+}
+.shape3 {
+  height: 50px;
   width: 310px;
 }
-.shape3{
+.shape4 {
   height: 50px;
   width: 355px;
 }
