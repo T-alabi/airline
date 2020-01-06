@@ -39,7 +39,7 @@
 
   <body class = "siteBody">
     <!--login stuff -->
-      <div class="PopLogin" id="LoginForm">
+      <div class="PopLogin" id="LoginForm" autocomplete="off">
         <form action="">
 
           <label><b>Email:</b><input type="text" placeholder="Enter Email" name="email" required></label><br />
@@ -58,8 +58,21 @@
 
          <label  for="from">From</label>
          <label  for="to">To</label><br>
-         <input type="text" id="from" required></input>
-  	     <input type="text" id="to" required></input><br><br>
+
+         <input type="text" id="from" list="from-locations" name="from" required></input>
+      <!--datalist from location options-->
+          <datalist id="from-locations">
+            <option value="New Jersey 1">Newark Liberty International Airport</option>
+            <option value="New Jersey 2">Teterboro Airport</option>
+            <option value="New Jersey 3">Morristown Airport</option>
+            <option Value="New york 1">John F. Kennedy International Airporty</option>
+            <option Value="New york 2">LaGaurdia Airport</option>
+            <option value="Connecticut 1">Bradley International Airport</option>
+            <option value="Connecticut 2"> Connecticut Airport Authority</option>
+            <option value="Connecticut 3">Tweed New Haven Airport</option>
+          </datalist>
+
+         <input type="text" id="to" required></input><br><br>
 
          <label  for="date1">Depart</label><br>
          <input type="date" id="date1" required></input><br>

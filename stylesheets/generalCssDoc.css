@@ -192,6 +192,11 @@ padding: 15px 15px 10px 15px;
 }
 .FrequentFlyers{
 }
+input[list]{
+    background-color: #ff8f29;
+    padding: 10px;
+    color: #15273a;
+}
 /*footer*/
 .SocialMedia{
   font-family: 'Lato', sans-serif;
