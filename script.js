@@ -36,3 +36,4 @@ function OpenLogin() {
 function closeForm() {
   document.getElementById("LoginForm").style.display = "none";
 }
+/*sql and DB stuff*/
