@@ -178,7 +178,10 @@ padding: 15px 15px 10px 15px;
   outline-width: medium;
   outline-color: navy;
 }
-
+/* about us */
+.aboutus{
+  font-family: 'Lato', sans-serif;
+}
 /*form*/
 .Submit{
   padding: 20px;
