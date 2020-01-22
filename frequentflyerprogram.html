@@ -40,7 +40,7 @@
   <body class = "siteBody">
     <!--login stuff -->
       <div class="PopLogin" id="LoginForm">
-        <form action="">
+        <form id="frequentFlyerForm" action="">
 
           <label><b>Email:</b><input type="text" placeholder="Enter Email" name="email" required></label><br />
           <label><b>Password:</b><input type="password" placeholder="Enter Password" name="Password" required></label><br /><br />
@@ -101,7 +101,7 @@
           <label>Postal Code<input type="number" name="Post Code" required/></label><br /> <br />
         </label>
 
-        <input type="submit" class="Submit"/>
+        <input type="submit" class="Submit" onclick="submitConfirmation();" id="flyerSubmit"/>
 
       </form>
 

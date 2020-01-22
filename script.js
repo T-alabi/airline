@@ -36,4 +36,8 @@ function OpenLogin() {
 function closeForm() {
   document.getElementById("LoginForm").style.display = "none";
 }
+function submitConfirmation(){
+  document.getElementById("frequentFlyerForm").style.display= "none";
+  document.getElementById("").style.display= "block";
+}
 /*sql and DB stuff*/
