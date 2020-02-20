@@ -41,3 +41,4 @@ function submitConfirmation(){
   document.getElementById("").style.display= "block";
 }
 /*sql and DB stuff*/
+/**/

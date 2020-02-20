@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Timetable</title>
-  <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
 
       <!-- css -->
       <link rel="stylesheet" type="text/css" href="stylesheets\generalCssDoc.css">
+      <link rel="stylesheet/less" type="text/css" href="stylesheets\Cssstyles.less" />
       <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/> <!--fix the effects later-->
       <!-- javascript -->
       <script src="script.js"></script>
 
@@ -40,35 +41,21 @@
 
   <body class = "siteBody">
     <h1>Timetable</h1>
-<!--bootstrap test, will remove
-    <form class="form-horizontal" action="">
-  <div class="form-group">
+    <div id="page-body">
+        <!-- [PERIOD SELECTOR] -->
+        <div id="cal-date">
+          <select id="cal-mth"></select>
+          <select id="cal-yr"></select>
+          <input id="cal-set" type="button" value="SET"/>
+        </div>
 
-    <label class="control-label col-sm-2" for="email">Email:</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="email" placeholder="Enter email">
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label col-sm-2" for="pwd">Password:</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label><input type="checkbox"> Remember me</label>
+        <!-- [CALENDAR] -->
+        <div id="cal-container"></div>
+
+        <!-- [EVENT] -->
+        <div id="cal-event"></div>
       </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Submit</button>
-    </div>
-  </div>
-</form>-->
-  <iframe src="Ventus Airlines_ucvts.tec.nj.us_0l1lqtk6gfevv5qh2o2b8hrgco@group.calendar.google.com.ics"></iframe>
+
     <footer class="SocialMedia">
       <h5>Social Media</h5>
       <a href="https://www.facebook.com/" class="SocialLink" target="_blank"><img src="images/facebook.png" style="height: 35px; width: 35px;"></a>
