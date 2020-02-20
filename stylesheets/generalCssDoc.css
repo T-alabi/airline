@@ -42,6 +42,12 @@ use css.less to make easier to understand?
   font-size: 15px;
   margin-right: 12px;
 }
+.navelement {
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  margin-right: 12px;
+}
 .nav-item:hover{
    color: #ff8f29;
 }
