@@ -36,11 +36,14 @@ use css.less to make easier to understand?
 .navigation {
   text-align: right;
 }
-.navelement {
+.navigation {
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
   margin-right: 12px;
+}
+.nav-item:hover{
+   color: #ff8f29;
 }
 /* dropdown */
 .dropdown {
