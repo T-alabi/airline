@@ -41,11 +41,11 @@
 
   <body class="siteBody">
     <!--login stuff -->
-      <div class="PopLogin" id="LoginForm">
-        <form action="">
+      <div class="PopLogin form-horizontal col-xs-4" id="LoginForm">
+        <form  action="">
 
-          <label><b>Email:</b><input type="text" placeholder="Enter Email" name="email" required></label><br />
-          <label><b>Password:</b><input type="password" placeholder="Enter Password" name="Password" required></label><br /><br />
+          <label class="control-label col-sm-2"><b>Email:</b><input type="text" placeholder="Enter Email" name="email" required></label><br />
+          <label class="control-label col-sm-2"><b>Password:</b><input type="password" placeholder="Enter Password" name="Password" required></label><br /><br />
 
           <button type="submit" class="loginBtn">Login</button>
           <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
@@ -92,12 +92,24 @@
 
 <h2>Apply Here!</h2>
 
-    <form action="" onsubmit=" submit()">
-      <label  >Contact Information</label> <br />
+    <form action=""   onsubmit=" submit()">
 
-      <label  >First Name: <input type="text" name="First Name" required/></label>
-      <label  >Middle Name: <input type="text" name="Middle Name"/></label>
-      <label  >Last Name: <input type="text" name="Last Name" required/></label><br /><br />
+        <label  >Contact Information</label> <br />
+      <div class="form-group w-25">
+        <label for="FirstName" > First Name:</label>
+          <input type="text" name="FirstName" class="form-control" placeholder="Enter First Name" required/>
+      </div>
+      <div class="form-group w-25">
+        <label for="MiddleName">Middle Name</label>
+          <input type="text" name="MiddleName" class="form-control" placeholder="Enter Middle Name"/>
+      </div>
+      <div>
+        <label for="LastName"> LastName</label>
+          <input />
+      </div>
+        <label  >Last Name: <input type="text" name="Last Name" required/></label><br /><br />
+
+
 
       <label  >Email: <input type="email" name="Email" required /></label><br/><br/>
 

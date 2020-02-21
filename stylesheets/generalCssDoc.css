@@ -42,12 +42,12 @@ use css.less to make easier to understand?
   font-size: 15px;
   margin-right: 12px;
 }
-.navelement {
+/*.navelement {
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
   margin-right: 12px;
-}
+}*/
 .nav-item:hover{
    color: #ff8f29;
 }
@@ -100,9 +100,9 @@ use css.less to make easier to understand?
 }
 .PopLogin{
   display: none;
- top: 50;
+ /*top: 50;:
  right: 15px;
- border: 3px solid #ff8f29;
+ border: 3px*/border: solid #ff8f29;
  background-color: #ff8f29;
 }
 .loginBtn{
@@ -191,7 +191,10 @@ padding: 15px 15px 10px 15px;
 .aboutus{
   font-family: 'Lato', sans-serif;
 }
-/*form*/
+/*forms*/
+.form-control{
+  width: 25%; 
+}
 .Submit{
   padding: 20px;
   color: white;
