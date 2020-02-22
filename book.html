@@ -58,48 +58,54 @@
   	     <input type="radio" name="triptype" value="roundtrip" onclick="roundtrip();" checked="checked">Round Trip</input>
          <input type="radio" name="triptype" value="oneway" onclick="oneway();">One Way</input><br><br>
 
-         <label  for="from">From</label>
-         <label  for="to">To</label><br>
+        <div class="row">
+         <div class="form-group col w-25">
+           <label for="fromLocations">From Locations:</label>
+            <input type="text" class="form-control" list="from-locations" name="from" placeholder="Choose a from airport here"required />
+            <!--datalist from location options-->
+       <datalist id="from-locations">
+         <option value="New Jersey 1">Morristown Airport</option>
+         <option value="New Jersey 2">Newark Liberty International Airport</option>
+         <option value="New Jersey 3">Teterboro Airport</option>
+         <option value="New York 1">John F. Kennedy International Airport</option>
+         <option value="New York 2">LaGuardia Airport</option>
+         <option value="Connecticut 1">Bradley International Airport</option>
+         <option value="Connecticut 2">Connecticut Airport Authority</option>
+         <option value="Connecticut 3">Tweed New Haven Airport</option>
+         <option value="Maryland">Baltimore Washington International Thurgood Marshall Airport</option>
+         <option value="Massachusetts">The New Bedford Regional Airport</option>
+         <option value="New Hampshire">Manchester-Boston Regional Airport</option>
+         <option value="Pennsylvania">Philadelphia International Airport</option>
+         <option value="Vermont">Burlington International Airport</option>
+         <option value="Virginia 1">Norfolk International Airport</option>
+         <option value="Virginia 2">Ronald Reagan Washington National Airport</option>
+       </datalist>
+         </div>
 
-         <input type="text" id="from" list="from-locations" name="from" required></input>
-      <!--datalist from location options-->
-          <datalist id="from-locations">
-            <option value="New Jersey 1">Morristown Airport</option>
-            <option value="New Jersey 2">Newark Liberty International Airport</option>
-            <option value="New Jersey 3">Teterboro Airport</option>
-            <option value="New York 1">John F. Kennedy International Airport</option>
-            <option value="New York 2">LaGuardia Airport</option>
-            <option value="Connecticut 1">Bradley International Airport</option>
-            <option value="Connecticut 2">Connecticut Airport Authority</option>
-            <option value="Connecticut 3">Tweed New Haven Airport</option>
-            <option value="Maryland">Baltimore Washington International Thurgood Marshall Airport</option>
-            <option value="Massachusetts">The New Bedford Regional Airport</option>
-            <option value="New Hampshire">Manchester-Boston Regional Airport</option>
-            <option value="Pennsylvania">Philadelphia International Airport</option>
-            <option value="Vermont">Burlington International Airport</option>
-            <option value="Virginia 1">Norfolk International Airport</option>
-            <option value="Virginia 2">Ronald Reagan Washington National Airport</option>
-          </datalist>
+         <div class="form-group col w-25">
+           <label for="toLocations">To Locations:</label>
+            <input type="text" class="form-control" list="to-locations" name="toLocations" placeholder="Choose a to airport here " required />
+            <!--datalist from location options-->
+       <datalist id="to-locations">
+         <option value="New Jersey 1">Morristown Airport</option>
+         <option value="New Jersey 2">Newark Liberty International Airport</option>
+         <option value="New Jersey 3">Teterboro Airport</option>
+         <option value="New York 1">John F. Kennedy International Airport</option>
+         <option value="New York 2">LaGuardia Airport</option>
+         <option value="Connecticut 1">Bradley International Airport</option>
+         <option value="Connecticut 2">Connecticut Airport Authority</option>
+         <option value="Connecticut 3">Tweed New Haven Airport</option>
+         <option value="Maryland">Baltimore Washington International Thurgood Marshall Airport</option>
+         <option value="Massachusetts">The New Bedford Regional Airport</option>
+         <option value="New Hampshire">Manchester-Boston Regional Airport</option>
+         <option value="Pennsylvania">Philadelphia International Airport</option>
+         <option value="Vermont">Burlington International Airport</option>
+         <option value="Virginia 1">Norfolk International Airport</option>
+         <option value="Virginia 2">Ronald Reagan Washington National Airport</option>
+       </datalist>
+         </div>
 
-         <input type="text" id="to" list="to-locations" name="to" required></input>
-         <!--datalist to location options (add other US locations but w/ 1 airport option)-->
-          <datalist id="to-locations">
-            <option value="New Jersey 1">Morristown Airport</option>
-            <option value="New Jersey 2">Newark Liberty International Airport</option>
-            <option value="New Jersey 3">Teterboro Airport</option>
-            <option value="New York 1">John F. Kennedy International Airport</option>
-            <option value="New York 2">LaGuardia Airport</option>
-            <option value="Connecticut 1">Bradley International Airport</option>
-            <option value="Connecticut 2">Connecticut Airport Authority</option>
-            <option value="Connecticut 3">Tweed New Haven Airport</option>
-            <option value="Maryland">Baltimore Washington International Thurgood Marshall Airport</option>
-            <option value="Massachusetts">The New Bedford Regional Airport</option>
-            <option value="New Hampshire">Manchester-Boston Regional Airport</option>
-            <option value="Pennsylvania">Philadelphia International Airport</option>
-            <option value="Vermont">Burlington International Airport</option>
-            <option value="Virginia 1">Norfolk International Airport</option>
-            <option value="Virginia 2">Ronald Reagan Washington National Airport</option>
-          </datalist><br /><br />
+        </div>
 
          <label  for="date1">Depart</label><br>
          <input type="date" id="date1" required></input><br>

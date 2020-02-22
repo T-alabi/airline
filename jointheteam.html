@@ -147,16 +147,14 @@
         <input type="radio" name="authorized" value="yes" required value="1"/>Yes <br />
         <input type="radio" name="authorized" value="no" />No<br />
       </label><br />
-
-      <label  >
-        Where did you receive your training?
-        <input type="text" name="Education" required/>
-      </label> <br /> <br />
-
-      <label  >
-        Please paste a copy of your resume here: <br />
-        <textarea name="Resume" required> </textarea>
-      </label><br />
+      <div class="form-group w-25">
+        <label for="education">Where did you receive your training?</label>
+          <input type="text" name="education" class="form-control" placeholder="Name the school here" required />
+      </div>
+      <div class="form-group w-50">
+        <label for="Resume"> Please past a copy of your resume here:</label>
+          <textarea class="form-control" rows="15" name="Resume" placeholder="Resume goes here" required></textarea>
+      </div>
 
       <input type="submit" class="Submit"/>
     </form>
