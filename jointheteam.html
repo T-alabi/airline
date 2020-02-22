@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Joint The Team</title>
+    <title>Join The Team</title>
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="stylesheets\generalCssDoc.css">
@@ -13,31 +13,31 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/> <!--fix the effects later-->
+
     <!-- javascript -->
     <script src="script.js"></script>
 
-    <div id="header"  class="navbar navbar-expand-sm">
-<!--using this navbar to test and confirm bootstrap before changing-->
-      <div class=" navbar navbar-expand-sm ">
-        <a href="home.html" class="text-decoration-none " id="airlineSign">VENTUS AIRLINES</a>
-        <a href="aboutus.html" class="navigation nav-item text-decoration-none">ABOUT US</a>
-        <a href="jointheteam.html" class="navigation nav-item text-decoration-none">JOIN THE TEAM</a>
-        <div class="dropdown text-decoration-none">
-          <button class="navigation nav-item text-decoration-none" id="dropbtn">FLIGHT INFORMATION</button>
-          <div class="dropdown-content">
-            <a href="book.html" class="navigation nav-item text-decoration-none">BOOK</a>
-            <a href="mytrips.html" class="navigation nav-item text-decoration-none">MY TRIPS</a>
-            <a href="flightstatus.html" class="navigation nav-item text-decoration-none">FLIGHT STATUS</a>
-            <a href="timetable.html" class="navigation nav-item text-decoration-none">TIMETABLE</a>
+      <div id="header"  class="navbar navbar-expand-sm">
+      <!--using this navbar to test and confirm bootstrap before changing-->
+        <div class=" navbar navbar-expand-sm ">
+          <a href="home.html" class="text-decoration-none " id="airlineSign">VENTUS AIRLINES</a>
+          <a href="aboutus.html" class="navigation nav-item text-decoration-none">ABOUT US</a>
+          <a href="jointheteam.html" class="navigation nav-item text-decoration-none">JOIN THE TEAM</a>
+          <div class="dropdown text-decoration-none">
+            <button class="navigation nav-item text-decoration-none" id="dropbtn">FLIGHT INFORMATION</button>
+            <div class="dropdown-content">
+              <a href="book.html" class="navigation nav-item text-decoration-none">BOOK</a>
+              <a href="mytrips.html" class="navigation nav-item text-decoration-none">MY TRIPS</a>
+              <a href="flightstatus.html" class="navigation nav-item text-decoration-none">FLIGHT STATUS</a>
+              <a href="timetable.html" class="navigation nav-item text-decoration-none">TIMETABLE</a>
+            </div>
           </div>
+          <a href="frequentflyerprogram.html" class="navigation nav-item text-decoration-none">FREQUENT FLYER PROGRAM</a>
+          <button id="Login" class="navigation nav-item text-decoration-none" onclick="OpenLogin();">LOGIN</button>
         </div>
-        <a href="frequentflyerprogram.html" class="navigation nav-item text-decoration-none">FREQUENT FLYER PROGRAM</a>
-        <button id="Login" class="navigation nav-item text-decoration-none" onclick="OpenLogin();">LOGIN</button>
       </div>
 
-    </div>
-
-</head>
+  </head>
 
   <body class="siteBody">
     <!--login stuff -->
@@ -101,15 +101,15 @@
         <label>Contact Information</label>
 
       <div class="form-group w-25">
-        <label for="FirstName" > First Name:</label>
+        <label for="FirstName">First Name:</label>
           <input type="text" name="FirstName" class="form-control" placeholder="Enter First Name" required/>
       </div>
       <div class="form-group w-25">
-        <label for="MiddleName">Middle Name</label>
+        <label for="MiddleName">Middle Name:</label>
           <input type="text" name="MiddleName" class="form-control" placeholder="Enter Middle Name"/>
       </div>
       <div class="form-group w-25">
-        <label for="LastName"> LastName</label>
+        <label for="LastName">Last Name:</label>
           <input type="text" name="LastName" class="form-control" placeholder="Enter Last Name" required/>
       </div>
       <div class="form-group w-25">
@@ -118,7 +118,7 @@
       </div>
       <div class="form-group w-25">
         <label for="phone">Phone Number:</label>
-          <input type="text" name="phone" class="form-control" placeholder="Ener Phone number (numbers only)" required/>
+          <input type="text" name="phone" class="form-control" placeholder="Enter Phone Number (numbers only)" required/>
       </div>
 
       <label>
@@ -128,7 +128,7 @@
         <input type="radio" name="Gender" value="Male"/>Male
       </label><br /><br />
 
-      <label  >
+      <label>
         What Are You Applying For? <br />
         <input type="radio" name="Position" Value="Flight Attendant" onclick="AttendantApp();" checked="checked"/><label>Flight Attendant</label>
         <input type="radio" name="Position" Value="Pilot" onclick="PilotApp();"/><label>Pilot</label>
@@ -138,7 +138,7 @@
 <!--the pilot stuff goes here. IF there is extra-->
       </label>
 
-      <label   id="AttendantApplication"> <!--for Flight attendent stuff-->
+      <label id="AttendantApplication"> <!--for Flight attendent stuff-->
         What languages (other than English) do you speak fluently? <br />
           <input type="checkbox" name="language" value="Spanish"/>Spanish<br/>
           <input type="checkbox" name="language" Value="Chinese" />Chinese<br />
@@ -147,7 +147,7 @@
           <!--Css the checkboxes-->
       </label> <br />
 
-      <label  >
+      <label>
         Are you legally allowed to work in the United States?<br />
         <input type="radio" name="authorized" value="yes" required value="1"/>Yes <br />
         <input type="radio" name="authorized" value="no" />No<br />
@@ -157,7 +157,7 @@
           <input type="text" name="education" class="form-control" placeholder="Name the school here" required />
       </div>
       <div class="form-group w-50">
-        <label for="Resume"> Please past a copy of your resume here:</label>
+        <label for="Resume">Please paste a copy of your resume here:</label>
           <textarea class="form-control" rows="15" name="Resume" placeholder="Resume goes here" required></textarea>
       </div>
 
