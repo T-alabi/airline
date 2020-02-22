@@ -123,12 +123,28 @@
           <input type="text" name="phone" class="form-control" placeholder="Enter Phone Number (numbers only)" required/>
       </div>
 
-      <label>
-        Gender: <br />
-        <input type="radio" name="Gender" value="Other" required value="1"/>Other
-        <input type="radio" name="Gender" value="Female"/>Female
-        <input type="radio" name="Gender" value="Male"/>Male
-      </label><br /><br />
+<!--[GENDER  RADIOS]-->
+<p>
+  Gender
+</p>
+  <div class="radio" >
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="FemaleGender" name="Gender" value="Female"/>
+        <label class="custom-control-label" for="FemaleGender">Female</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="MaleGender" name="Gender" value="Male" />
+        <label class="custom-control-label" for="MaleGender">Male</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="OtherGender" name="Gender" value="Other" />
+        <label class="custom-control-label" for="OtherGender">Other</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input class="custom-control-input" id="GenderRadio" name="Gender" value="prefer not to" />
+        <label class="custom-control-label" for="GenderRadio">Prefer Not To Say</label>
+    </div>
+  </div>
 
       <label>
         What Are You Applying For? <br />
@@ -137,17 +153,29 @@
       </label><br /><br />
 
       <label id="PilotApplication">
-<!--the pilot stuff goes here. IF there is extra-->
+        <!--if theres more-->
       </label>
 
-      <label id="AttendantApplication"> <!--for Flight attendent stuff-->
-        What languages (other than English) do you speak fluently? <br />
-          <input type="checkbox" name="language" value="Spanish"/>Spanish<br/>
-          <input type="checkbox" name="language" Value="Chinese" />Chinese<br />
-          <input type="checkbox" name="language" value="French"/>French<br />
-          <input type="checkbox" name="language" value="Tagalog" />Tagalog<br />
-          <!--Css the checkboxes-->
-      </label> <br />
+<!--[LANGUAGE CHECKBOXES]-->
+<div id="AttendantApplication">
+  <p>What languages (other than English) do you speak fluently?</p>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="spanish" id="spanish" name="language" />
+        <label class="custom-control-label" for="spanish">Spanish</label>
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="mandarin" id="mandarin" name="language2" />
+        <label class="custom-control-label" for="mandarin">Mandarin</label>
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="french" id="french" name="language3" />
+        <label class="custom-control-label" for="french">French</label>
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="tagalog" id="tagalog" name="language4" />
+        <label class="custom-control-label" for="tagalog">Tagalog</label>
+    </div>
+</div>
 
       <label>
         Are you legally allowed to work in the United States?<br />
