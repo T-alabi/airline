@@ -1,15 +1,3 @@
-/* #Heading {
-    margin-top: 50px;
-    line-height: 75%;
-    text-align: center;
- }
-.subtext {
-font-style: italic;
-}
-.DesignElement {
-}
-use css.less to make easier to understand?
-*/
 
 .siteBody {
   padding-left: 50px;
@@ -18,7 +6,6 @@ use css.less to make easier to understand?
 }
 
 /*login*/
-
 /* header / navigation bar */
 #header {
   background: #15273a;
@@ -45,12 +32,6 @@ use css.less to make easier to understand?
   font-size: 15px;
   margin-right: 12px;
 }
-/*.navelement {
-  color: white;
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 15px;
-  margin-right: 12px;
-}*/
 .nav-item:hover{
    color: #ff8f29;
 }
@@ -97,19 +78,13 @@ use css.less to make easier to understand?
 #Login:hover {
   color: #ff8f29;
 }
-#LoginForm{
-  padding: 25px;
-  text-align: center;
-}
 .PopLogin{
   display: none;
- /*top: 50;:
- right: 15px;
- border: 3px*/border: solid #ff8f29;
+ border: solid #ff8f29;
  background-color: #ff8f29;
 }
 .loginBtn{
-background-color: green;
+background-color: #15273a;
 color: white;
 border: none;
 padding: 15px 15px 10px 15px;

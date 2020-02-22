@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Timetable</title>
+  <title>Joint The Team</title>
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="stylesheets\generalCssDoc.css">
@@ -41,16 +41,20 @@
 
   <body class="siteBody">
     <!--login stuff -->
-      <div class="PopLogin form-horizontal col-xs-4" id="LoginForm">
-        <form  action="">
-
-          <label class="control-label col-sm-2"><b>Email:</b><input type="text" placeholder="Enter Email" name="email" required></label><br />
-          <label class="control-label col-sm-2"><b>Password:</b><input type="password" placeholder="Enter Password" name="Password" required></label><br /><br />
-
-          <button type="submit" class="loginBtn">Login</button>
-          <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
-        </form>
-      </div>
+    <div class="PopLogin container" id="LoginForm" autocomplete="off">
+      <form action="">
+          <div class="form-group">
+            <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" placeholder="Enter email"/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+              <input type="password" class="form-control" name="password" placeholder="Enter Password" />
+          </div>
+        <button type="submit" class="loginBtn">Login</button>
+        <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
 
       <h1>Join the Team</h1>
       <h4><i>Apply today and become a part of the team!</i></h4>
@@ -94,7 +98,8 @@
 
     <form action=""   onsubmit=" submit()">
 
-        <label  >Contact Information</label> <br />
+        <label>Contact Information</label>
+
       <div class="form-group w-25">
         <label for="FirstName" > First Name:</label>
           <input type="text" name="FirstName" class="form-control" placeholder="Enter First Name" required/>

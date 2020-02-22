@@ -41,16 +41,21 @@
 
   <body class = "siteBody">
     <!--login stuff -->
-      <div class="PopLogin" id="LoginForm">
-        <form action="">
+    <div class="PopLogin container" id="LoginForm" autocomplete="off">
+      <form action="">
+          <div class="form-group">
+            <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" placeholder="Enter email"/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+              <input type="password" class="form-control" name="password" placeholder="Enter Password" />
+          </div>
+        <button type="submit" class="loginBtn">Login</button>
+        <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
 
-          <label><b>Email:</b><input type="text" placeholder="Enter Email" name="email" required></label><br />
-          <label><b>Password:</b><input type="password" placeholder="Enter Password" name="Password" required></label><br /><br />
-
-          <button type="submit" class="loginBtn">Login</button>
-          <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
-        </form>
-      </div>
 
     <h1>Flight Status</h1>
 

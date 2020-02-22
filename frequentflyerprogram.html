@@ -41,26 +41,21 @@
 
   <body class = "siteBody">
     <!--login stuff -->
-    <form id=" form-horizontal" action="">
-      <div class="PopLogin" id="LoginForm">
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="email">Email:</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
+    <div class="PopLogin container" id="LoginForm" autocomplete="off">
+      <form action="">
+          <div class="form-group">
+            <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" placeholder="Enter email"/>
           </div>
-        </div>
-
-        <div class="form-group">
-          <label class="control-label col-sm-2" for="password">Password:</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="password" placeholder="Enter password">
+          <div class="form-group">
+            <label for="password">Password:</label>
+              <input type="password" class="form-control" name="password" placeholder="Enter Password" />
           </div>
-        </div>
+        <button type="submit" class="loginBtn">Login</button>
+        <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
 
-          <button type="submit" class="loginBtn">Login</button>
-          <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
-        </form>
-      </div>
 
     <h2>Join The <i>Frequent Flyer Program</i></h2>
     <p>Join the frequent flyer program! With this exclusive feature of <strong>Ventus Airlines</strong>, you can earn miles <br> that can total up to a free trip! You can spend your miles any way you want. Any time! Any Day!</p>
