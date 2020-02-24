@@ -145,12 +145,20 @@
         <label class="custom-control-label" for="GenderRadio">Prefer Not To Say</label>
     </div>
   </div>
-
-      <label>
-        What Are You Applying For? <br />
-        <input type="radio" name="Position" Value="Flight Attendant" onclick="AttendantApp();" checked="checked"/><label>Flight Attendant</label>
-        <input type="radio" name="Position" Value="Pilot" onclick="PilotApp();"/><label>Pilot</label>
-      </label><br /><br />
+  <!--[application things]-->
+  <BR /> <p>
+    What are you applying for?
+  </p>
+    <div class="radio">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio"class="custom-control-input" id="flightattendant" name="position" value="flight attendant"onclick="AttendantApp();" checked="checked" />
+          <label class="custom-control-label" for="flightattendant">Flight Attendant</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio"class="custom-control-input" id="pilot" name="position" value="pilot"onclick="PilotApp();" />
+          <label class="custom-control-label" for="pilot">Pilot</label>
+      </div>
+    </div><br />
 
       <label id="PilotApplication">
         <!--if theres more-->
@@ -177,21 +185,47 @@
     </div>
 </div>
 
-      <label>
-        Are you legally allowed to work in the United States?<br />
-        <input type="radio" name="authorized" value="yes" required value="1"/>Yes <br />
-        <input type="radio" name="authorized" value="no" />No<br />
-      </label><br />
+<!--[AUTHORIZATION]-->
+
+    <p>
+      Are you legally allowed to work in the United States?
+    </p>
+    <div class="radio">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="YESauthorized" name="authorized" value="Yes" />
+          <label class="custom-control-label" for="YESauthorized">Yes</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio"class="custom-control-input" id="NOauthorized" name="authorized" value="no" />
+          <label class="custom-control-label" for="NOauthorized">No</label>
+      </div>
+    </div><br />
+
+
       <div class="form-group w-25">
         <label for="education">Where did you receive your training?</label>
           <input type="text" name="education" class="form-control" placeholder="Name the school here" required />
       </div>
+      <h5>We reccomend (but don't require) a resume, to show your qualifications</h5><br /><br />
       <div class="form-group w-50">
         <label for="Resume">Please paste a copy of your resume here:</label>
           <textarea class="form-control" rows="15" name="Resume" placeholder="Resume goes here" required></textarea>
       </div>
+      <div class="custom-file w-50">
+        <input type="file" class="custom-file-input" id="customFile" />
+          <label class="custom-file-label" for="customFile">Or upload your resume here:</label>
+      </div>
 
-      <input type="submit" class="Submit"/>
+      <!--[for the file name]-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+//[for the file name to show]
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+    <br /><br />  <input type="submit" class="Submit"/>
     </form>
 
     <footer class="SocialMedia">
