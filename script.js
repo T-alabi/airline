@@ -1,3 +1,4 @@
+// book
 function roundtrip() {
   document.getElementById("return").style.display = "block";
   document.getElementById("date2").style.display = "block";
@@ -8,10 +9,19 @@ function oneway() {
   document.getElementById("date2").style.display = "none";
 }
 
+// sign up
 function uscountry() {
-  document.getElementById("usstates").style.display = "none";
+  var c = document.getElementById("country");
+  var countryselected = c.options[c.selectedIndex].value;
+  if (countryselected == "United States") {
+    document.getElementById("usstates").style.display = "block";
+  }
+  else {
+    document.getElementById("usstates").style.display = "none";
+  }
 }
 
+// join the team
 function AttendantApp() {
 document.getElementById("AttendantApplication").style.display= "block";
 document.getElementById("PilotApplication").style.display="none";
