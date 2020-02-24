@@ -8,6 +8,10 @@ function oneway() {
   document.getElementById("date2").style.display = "none";
 }
 
+function uscountry() {
+  document.getElementById("usstates").style.display = "none";
+}
+
 function AttendantApp() {
 document.getElementById("AttendantApplication").style.display= "block";
 document.getElementById("PilotApplication").style.display="none";
