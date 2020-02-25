@@ -11,7 +11,7 @@ function oneway() {
 
 // sign up
 function uscountry() {
-  var c = document.getElementById("country");
+  var c = document.getElementById("countryname");
   var countryselected = c.options[c.selectedIndex].value;
   if (countryselected == "United States") {
     document.getElementById("usstates").style.display = "block";

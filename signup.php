@@ -1,18 +1,16 @@
 <?php
-  $first_name = $_POST['FirstName'];
-  $middle_name = $_POST['MiddleName'];
-  $last_name = $_POST['LastName'];
-  $date_of_birth = $_POST['DateOfBirth'];
-  $gender = $_POST['Gender'];
-  $country = $_POST['CountryName'];
-  $address = $_POST['Address'];
-  $city = $_POST['City'];
-  $state = $_POST['State'];
-  $phone_number = $_POST['PhoneNumber'];
-  $email = $_POST['Email'];
-  $password = $_POST['Password'];
+  $first_name = $_POST['first_name'];
+  $last_name = $_POST['last_name'];
+  $date_of_birth = $_POST['date_of_birth'];
+  $country = $_POST['country'];
+  $address = $_POST['address'];
+  $city = $_POST['city'];
+  $state = $_POST['state'];
+  $phone_number = $_POST['phone_number'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
 
-  if (!empty($first_name) || !empty($last_name) || !empty($date_of_birth) || !empty($gender) || !empty($country) || !empty($address) || !empty($city) || !empty($state) || !empty($phone_number) || !empty($email) || !empty($password)) {
+  if (!empty($first_name) || !empty($last_name) || !empty($date_of_birth) || !empty($country) || !empty($address) || !empty($city) || !empty($state) || !empty($phone_number) || !empty($email) || !empty($password)) {
     $host = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
@@ -24,9 +22,30 @@
       die('Connect Error('.mysqli_connect_errno().')'.mysqli_connect_error());
     }
     else {
-      $SELECT = ""
-    }
+      $SELECT = "SELECT email From passengers Where email = ? Limit 1";
+      $INSERT = "INSERT Into passengers (first_name, last_name, date_of_birth, country, address, city, state, phone_number, email, password) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
+      $stmt = $conn->prepare($SELECT);
+      $stmt->bind_param("s", $email);
+      $stmt->execute();
+      $stmt->bind_result($email);
+      $stmt->store_result();
+      $rnum = $stmt->num_rows;
+
+      if ($rnum==0) {
+        $stmt->close();
+
+        $stmt = $conn->prepare($INSERT);
+        $stmt->bind_param("sssssssiss", $first_name, $last_name, $date_of_birth, $country, $address, $city, $state, $phone_number, $email, $password);
+        $stmt->execute();
+        echo "New record inserted successfully";
+      }
+      else {
+        echo "Someone already registered using this email";
+      }
+      $stmt->close();
+      $conn->close();
+    }
   }
   else {
     echo "Please fill out all required fields.";
