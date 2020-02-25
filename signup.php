@@ -2,6 +2,7 @@
   $first_name = $_POST['first_name'];
   $last_name = $_POST['last_name'];
   $date_of_birth = $_POST['date_of_birth'];
+  $gender = $_POST['gender'];
   $country = $_POST['country'];
   $address = $_POST['address'];
   $city = $_POST['city'];
@@ -10,7 +11,7 @@
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  if (!empty($first_name) || !empty($last_name) || !empty($date_of_birth) || !empty($country) || !empty($address) || !empty($city) || !empty($state) || !empty($phone_number) || !empty($email) || !empty($password)) {
+  if (!empty($first_name) || !empty($last_name) || !empty($date_of_birth) || !empty($gender) || !empty($country) || !empty($address) || !empty($city) || !empty($state) || !empty($phone_number) || !empty($email) || !empty($password)) {
     $host = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
@@ -23,7 +24,7 @@
     }
     else {
       $SELECT = "SELECT email From passengers Where email = ? Limit 1";
-      $INSERT = "INSERT Into passengers (first_name, last_name, date_of_birth, country, address, city, state, phone_number, email, password) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+      $INSERT = "INSERT Into passengers (first_name, last_name, date_of_birth, gender, country, address, city, state, phone_number, email, password) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
       $stmt = $conn->prepare($SELECT);
       $stmt->bind_param("s", $email);
@@ -36,7 +37,7 @@
         $stmt->close();
 
         $stmt = $conn->prepare($INSERT);
-        $stmt->bind_param("sssssssiss", $first_name, $last_name, $date_of_birth, $country, $address, $city, $state, $phone_number, $email, $password);
+        $stmt->bind_param("ssssssssiss", $first_name, $last_name, $date_of_birth, $gender, $country, $address, $city, $state, $phone_number, $email, $password);
         $stmt->execute();
         echo "New record inserted successfully";
       }
