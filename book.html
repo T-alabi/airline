@@ -114,18 +114,41 @@
 
         </div>
 
-         <label  for="date1">Depart</label><br>
-         <input type="date" id="date1" required></input><br>
-         <label  for="date2" id="return">Return</label><br>
-  	     <input type="date" id="date2"></input><br>
+      <div class="form-group w-25">
+        <label for="date1">Depart Date</label>
+          <input type="date" id="date1" name="date1" class="form-control" required />
+      </div>
+      <div class="form-group w-25">
+        <label  for="date2" id="return">Return Date</label>
+          <input type="date" id="date2" name="date2" class="form-control"></input>
+      </div>
+
          <!-- should 'return' be required ? -->
+      <div class="custom-control custom-checkbox mb-3">
+        <input type="checkbox" class="custom-control-input" value="flexible" id="flexible" name="dateflexibility"></input>
+          <label class="custom-control-label" for="flexible">My Dates Are Flexible</label><br><br>
+      </div>
 
-         <input type="checkbox" name="dateflexibility"></input>
-         <label  for="to">My Dates Are Flexible</label><br><br>
+<!--[CLASS RADIOS]-->
+<p>
+  What class would you like to fly?
+</p>
+<div class="radio" >
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="EconClass" name="class" value="Economy"/>
+      <label class="custom-control-label" for="EconClass">Economy</label>
+  </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="BusinClass" name="class" value="Business" />
+      <label class="custom-control-label" for="BusinClass">Business</label>
+  </div>
+  <div class="custom-control custom-radio custom-control-inline">
+    <input type="radio" class="custom-control-input" id="FirstClass" name="class" value="First" />
+      <label class="custom-control-label" for="FirstClass">First</label>
+  </div>
 
-         <input  type="radio" name="class" value="economy" checked="checked">Economy Class</input><br>
-         <input  type="radio" name="class" value="business">Business Class</input><br>
-         <input  type="radio" name="class" value="first">First Class</input><br><br>
+</div>
+
          <!-- other classes ? -->
 
          <label  for="passengers">Passengers</label><br>
