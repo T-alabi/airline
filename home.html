@@ -44,22 +44,24 @@
     <div class="PopLogin container" id="LoginForm" autocomplete="off">
       <form action="">
           <div class="form-group">
-            <label for="email">Email:</label>
-              <input type="text" class="form-control" name="email" placeholder="Enter email"/>
+            <label for="username">Username:</label>
+              <input type="text" class="form-control" id="username" name="username" placeholder="Enter email"/>
           </div>
           <div class="form-group">
             <label for="password">Password:</label>
-              <input type="password" class="form-control" name="password" placeholder="Enter Password" />
+              <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" />
           </div>
           <a href="signup.html">Don't have an account? Sign up here.</a><br>
-        <button type="submit" class="loginBtn">Login</button>
+        <button type="submit" onclick="getInfo();" class="loginBtn">Login</button>
         <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
       </form>
     </div>
 
 
     <!-- video goes here -->
+<p id="displayHere">
 
+</p>
     <div class="backgroundimage">
       <img src="images/airplane.jpg" id="img">
       <h1 class="headingtext imagetext">Welcome to <i>Ventus Airlines</i></h1>

@@ -1,3 +1,8 @@
+var objPeople = [
+  {username: "user",
+  password: "pass"
+  }
+]
 // book
 function roundtrip() {
   document.getElementById("return").style.display = "block";
@@ -43,6 +48,31 @@ function FormComplete() {
   document.getElementById("form").style.display = "none";
 }
 /*can you style alert boxes?*/
+/*login stuff*/
+function getInfo() {
+	var username = document.getElementById('username').value
+	var password = document.getElementById('password').value
+
+	for(var i = 0; i < objPeople.length; i++) {
+		// check is user input matches username and password of a current index of the objPeople array
+		if(username == objPeople[i].username && password == objPeople[i].password) {
+			console.log(username + " is logged in!!!")
+			// stop the function if this is found to be true
+      var div = document.getElementById("displayHere");
+      div.innerHTML = "it worked";
+			return
+		}
+    if(username!== objPeople[i].username && password !== objPeople[i].password){
+      console.log("username or password incorrect")
+      var div = document.getElementById("displayHere");
+      div.innerHTML = "username or password incorrect";
+      return
+    }
+    return
+	}
+  return
+}
+
 function OpenLogin() {
   document.getElementById("LoginForm").style.display = "block";
 }
