@@ -1,4 +1,6 @@
 <?php
+  # failed attempt to connect to database
+  /*
   $first_name = $_POST['first_name'];
   $last_name = $_POST['last_name'];
   $date_of_birth = $_POST['date_of_birth'];
@@ -52,4 +54,6 @@
     echo "Please fill out all required fields.";
     die();
   }
+  */
+  
 ?>
