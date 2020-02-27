@@ -194,7 +194,7 @@ input[list]{
     padding: 10px;
 }
 /*footer*/
-.SocialMedia{
+.footerContainer{
   font-family: 'Lato', sans-serif;
   padding: 2px 10px 10px 10px;
   margin-top: 20px;
@@ -203,7 +203,24 @@ input[list]{
   width: 100%;
   background-color: #15273a;
   Color: white;
-  text-align: center;
+}
+.socialMedia{
+  text-align: left;
+  padding-left: 50px;
+}
+.credits{
+  text-align: right;
+  padding-right: 50px;
+}
+.sources{
+  font-family: 'Lato', sans-serif;
+  padding: 2px 10px 10px 10px;
+  margin-top: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #15273a;
+  Color: white;
 }
 
 /* link */
