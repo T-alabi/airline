@@ -6,6 +6,11 @@
 }
 
 /*login*/
+#displayHere{
+  background: #15273a;
+  color: #ff8f29;
+  padding-left: 50px;
+}
 /* header / navigation bar */
 #header {
   background: #15273a;

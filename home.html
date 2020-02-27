@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/> <!--fix the effects later-->
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
 
     <!-- javascript -->
     <script src="script.js"></script>
@@ -52,19 +54,17 @@
               <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" />
           </div>
           <a href="signup.html">Don't have an account? Sign up here.</a><br>
-        <button type="submit" onclick="getInfo();" class="loginBtn">Login</button>
+        <button type="button" onclick="getInfo();" class="loginBtn">Login</button>
         <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
       </form>
+      <p id="displayHere"></p>
     </div>
 
 
     <!-- video goes here -->
-<p id="displayHere">
-
-</p>
     <div class="backgroundimage">
       <img src="images/airplane.jpg" id="img">
-      <h1 class="headingtext imagetext">Welcome to <i>Ventus Airlines</i></h1>
+      <h1 class="headingtext imagetext animated pulse infinite " >Welcome to <i>Ventus Airlines</i></h1>
     </div class="home-content">
 
     <h2 class="headingtext">THE VENTUS EXPERIENCE</h2> <!-- change heading title ? -->

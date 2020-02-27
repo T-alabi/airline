@@ -59,7 +59,7 @@ function getInfo() {
 			console.log(username + " is logged in!!!")
 			// stop the function if this is found to be true
       var div = document.getElementById("displayHere");
-      div.innerHTML = "it worked";
+      div.innerHTML = "Welcome Back " + username;
 			return
 		}
     if(username!== objPeople[i].username && password !== objPeople[i].password){
