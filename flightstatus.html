@@ -62,16 +62,69 @@
     <h1>Flight Status</h1>
 
     <form onsubmit="submit()">
-      <label for="from">From</label>
-      <label for="to">To</label><br>
-      <input type="text" id="from" required></input>
-      <input type="text" id="to" required></input><br><br>
+      <div class="row">
+        <div class="form-group col w-25">
+          <label for="fromLocations">Origin:</label>
+          <input type="text" class="form-control" list="from-locations" name="from" placeholder="Where from?" required />
+          <datalist id="from-locations">
+            <option value="Bradley International Airport"></option> <!-- Connecticut -->
+            <option value="Connecticut Airport Authority"></option> <!-- Connecticut -->
+            <option value="Tweed New Haven Airport"></option> <!-- Connecticut -->
+            <option value="Miami International Airport"></option> <!-- Florida -->
+            <option value="Hartsfield-Jackson Atlanta International Airport"></option> <!-- Georgia -->
+            <option value="Baltimore Washington International Thurgood Marshall Airport"></option> <!-- Maryland -->
+            <option value="The New Bedford Regional Airport"></option> <!-- Massachusetts -->
+            <option value="Morristown Airport"></option> <!-- New Jersey -->
+            <option value="Newark Liberty International Airport"></option> <!-- New Jersey -->
+            <option value="Teterboro Airport"></option> <!-- New Jersey -->
+            <option value="John F. Kennedy International Airport"></option> <!-- New York -->
+            <option value="LaGuardia Airport"></option> <!-- New York -->
+            <option value="Manchester-Boston Regional Airport"></option> <!-- New Hampshire -->
+            <option value="Raleigh-Durham International Airport"></option> <!-- North Carolina -->
+            <option value="Philadelphia International Airport"></option> <!-- Pennsylvania -->
+            <option value="Myrtle Beach International Airport"></option> <!-- South Carolina -->
+            <option value="Burlington International Airport"></option> <!-- Vermont -->
+            <option value="Norfolk International Airport"></option> <!-- Virginia -->
+            <option value="Ronald Reagan Washington National Airport"></option> <!-- Virginia -->
+            <option value="Yeager Airport"></option> <!-- West Virginia -->
+          </datalist>
+        </div>
 
-      <label for="flightNumber">Flight Number</label><br>
-      <input type="number" id="flightNumber" required></input><br><br>
+        <div class="form-group col w-25">
+          <label for="toLocations">Destination:</label>
+          <input type="text" class="form-control" list="to-locations" name="toLocations" placeholder="Where to?" required />
+          <datalist id="to-locations">
+            <option value="Bradley International Airport"></option> <!-- Connecticut -->
+            <option value="Connecticut Airport Authority"></option> <!-- Connecticut -->
+            <option value="Tweed New Haven Airport"></option> <!-- Connecticut -->
+            <option value="Miami International Airport"></option> <!-- Florida -->
+            <option value="Hartsfield-Jackson Atlanta International Airport"></option> <!-- Georgia -->
+            <option value="Baltimore Washington International Thurgood Marshall Airport"></option> <!-- Maryland -->
+            <option value="The New Bedford Regional Airport"></option> <!-- Massachusetts -->
+            <option value="Morristown Airport"></option> <!-- New Jersey -->
+            <option value="Newark Liberty International Airport"></option> <!-- New Jersey -->
+            <option value="Teterboro Airport"></option> <!-- New Jersey -->
+            <option value="John F. Kennedy International Airport"></option> <!-- New York -->
+            <option value="LaGuardia Airport"></option> <!-- New York -->
+            <option value="Manchester-Boston Regional Airport"></option> <!-- New Hampshire -->
+            <option value="Raleigh-Durham International Airport"></option> <!-- North Carolina -->
+            <option value="Philadelphia International Airport"></option> <!-- Pennsylvania -->
+            <option value="Myrtle Beach International Airport"></option> <!-- South Carolina -->
+            <option value="Burlington International Airport"></option> <!-- Vermont -->
+            <option value="Norfolk International Airport"></option> <!-- Virginia -->
+            <option value="Ronald Reagan Washington National Airport"></option> <!-- Virginia -->
+            <option value="Yeager Airport"></option> <!-- West Virginia -->
+          </datalist>
+        </div>
+      </div>
 
-      <label for="date">Date</label><br>
-      <input type="date" id="date"></input><br><br>
+      <label for="flightNumber">Flight Number:</label><br>
+      <input type="number" class="form-control" id="flightNumber" placeholder="What is your flight number?" required></input>
+
+      <div class="form-group w-25">
+        <label for="date">Date:</label><br>
+        <input type="date" class="form-control" id="date" placeholder="What day is your flight on?" required></input>
+      </div>
 
       <input type="submit" name="Search" class="Submit" value="Search"/>
     </form>

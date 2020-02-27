@@ -62,13 +62,21 @@
     <h1>My Trips</h1>
 
     <form onsubmit="submit()">
-      <label for="confirmationNumber">Confirmation Number</label><br>
-      <input type="number" id="confirmationNumber" required></input><br><br>
+      <div class="row">
+        <div class="form-group col w-25">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="What is your first name?" required />
+        </div>
+        <div class="form-group col w-25">
+          <label for="lastName">Last Name</label>
+          <input type="text" class="form-control"  id="lastName" placeholder="What is your last name?" required />
+        </div>
+      </div>
 
-      <label for="firstName">First Name</label>
-      <label for="lastName">Last Name</label><br>
-      <input type="text" id="firstName" required></input>
-      <input type="text" id="lastName" required></input><br><br>
+      <label for="confirmationNumber">Confirmation Number:</label><br>
+      <input type="number" class="form-control" id="confirmationNumber" placeholder="What is your confirmation number?" required></input>
+
+      <br>
 
       <input type="submit" name="Search" class="Submit" value="Search"/>
     </form>
