@@ -4,6 +4,11 @@
   padding-right: 55px;
   margin-bottom: 0px;
 }
+/*caption text*/
+.text{
+  background-color: black;
+  color: #ff8f29;
+}
 
 /*login*/
 #displayHere{
@@ -252,4 +257,24 @@ a:hover {
 }
 .SocialLink:hover {
   color: #ff8f29;
+}
+/*[CREDITS AND SOURCES]*/
+.creditBody{
+  text-align: center;
+}
+.creditLink{
+color: black;
+text-decoration: none;
+}
+.creditLink:link {
+  color: black;
+  text-decoration: none;
+  padding-right: 5px;
+}
+.creditLink:visited {
+  color: #15273a;
+  text-decoration: none;
+}
+.creditLink:hover {
+  color: #15273a;
 }
