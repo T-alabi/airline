@@ -3,6 +3,10 @@ var objPeople = [
   password: "pass"
   }
 ]
+
+// home
+
+
 // book
 function roundtrip() {
   document.getElementById("return").style.display = "block";
