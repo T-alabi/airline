@@ -116,7 +116,7 @@ padding: 15px 15px 10px 15px;
 /* home */
 .shape {
   height: 50px;
-  width: 465px;
+  width: 500px;
   background-color: #15273a;
   border-radius: 75px;
   margin-bottom: 30px;
@@ -126,10 +126,11 @@ padding: 15px 15px 10px 15px;
   color: white;
   font-family: 'Lato', sans-serif;
   align-items: center;
+  vertical-align: center;
 }
 .shape2 {
   height: 50px;
-  width: 410px;
+  width: 500px;
 }
 .shape3 {
   height: 50px;
