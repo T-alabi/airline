@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Frequent Flyer Program</title>
+    <link rel="shortcut icon" href="images\Capture.PNG" />
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="stylesheets\generalCssDoc.css">
+    <link rel="stylesheet/less" type="text/css" href="stylesheets\Cssstyles.less" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/> <!--fix the effects later-->
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+
+      <div id="header"  class="navbar navbar-expand-sm">
+      <!--using this navbar to test and confirm bootstrap before changing-->
+        <div class=" navbar navbar-expand-sm ">
+          <a href="home.html" class="text-decoration-none " id="airlineSign">VENTUS AIRLINES</a>
+          <a href="aboutus.html" class="navigation nav-item text-decoration-none">ABOUT US</a>
+          <a href="jointheteam.html" class="navigation nav-item text-decoration-none">JOIN THE TEAM</a>
+          <div class="dropdown text-decoration-none">
+            <button class="navigation nav-item text-decoration-none" id="dropbtn">FLIGHT INFORMATION</button>
+            <div class="dropdown-content">
+              <a href="book.html" class="navigation nav-item text-decoration-none">BOOK</a>
+              <a href="mytrips.html" class="navigation nav-item text-decoration-none">MY TRIPS</a>
+              <a href="flightstatus.html" class="navigation nav-item text-decoration-none">FLIGHT STATUS</a>
+              <a href="timetable.html" class="navigation nav-item text-decoration-none">TIMETABLE</a>
+            </div>
+          </div>
+          <a href="frequentflyerprogram.html" class="navigation nav-item text-decoration-none">FREQUENT FLYER PROGRAM</a>
+          <button id="Login" class="navigation nav-item text-decoration-none" onclick="OpenLogin();">LOGIN</button>
+          <a href="signup.html" class="navigation nav-item text-decoration-none">SIGN UP</a>
+        </div>
+      </div>
+
+  </head>
+
+  <body>
+    <div class="siteBody">
+    <!--login stuff -->
+    <div class="PopLogin container" id="LoginForm" autocomplete="off">
+      <form action="">
+          <div class="form-group">
+            <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" placeholder="Enter email"/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+              <input type="password" class="form-control" name="password" placeholder="Enter Password" />
+          </div>
+          <a href="signup.html">Don't have an account? Sign up here.</a><br>
+        <button type="submit" class="loginBtn">Login</button>
+        <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+    <h2>The <i>Frequent Flyer Program</i></h2>
+
+      <form class="FrequentFlyers form-horizontal"  onsubmit="FormComplete()" id="form">
+        <h5>Basic Information</h5>
+          <!--
+          <label>First Name: <input type="text" name="First Name" required/></label><br />
+          <label>Middle Name: <input type="text" name="Middle Name"/></label> <br />
+          <label>Last Name: <input type="text" name="Last Name" required/></label><br /><br />
+
+          <label>Email: <input type="email" name="Email" id="email" required /></label>
+          <label>Confirm Email:<input type="Email" name="confirm Email" id="confEmail" onblur="ConfirmEmail();" required/></label> <br /><Br />
+
+          <label  >Phone Number: <input type="tel" name="Phone Number" required /></label> <br />
+        </label><br />
+
+        <label>
+          Gender:
+          <select name="cars">
+              <option value="Female" required value="1">Female</option>
+              <option value="Male">Male</option>
+              <option value="Other">Other</option>
+            </select>
+        </label><br /><br />
+        <label>
+          <label>Address 1 <input type="text" name="Address 1" required/></label>
+          <label>Address 2 (Optional) <input type="text" name="Address 2" /></label> <br />
+          <label>City<input type="text" name="City" required/></label><br />
+          <label>State/Province<input type="text" name="State/Province" required/></label> <br />
+          <label>Postal Code<input type="number" name="Post Code" required/></label><br /> <br />
+        </label>
+        -->
+        <div class="form-group w-25">
+          <label for="first_name">First Name:</label>
+          <input type="text" name="first_name" class="form-control" placeholder="Enter Your First Name" required>
+        </div>
+
+        <div class="form-group w-25">
+          <label for="middle_name">Middle Name:</label>
+          <input type="text" name="middle_name" class="form-control" placeholder="Enter Your Middle Name">
+        </div>
+
+        <div class="form-group w-25">
+          <label for="last_name">Last Name:</label>
+          <input type="text" name="last_name" class="form-control" placeholder="Enter Your Last Name" required>
+        </div>
+
+        <div class="form-group w-25">
+          <label for="email">Email:</label>
+          <input type="email" name="email" class="form-control" placeholder="Enter Your Email" required/>
+        </div>
+        <div class="form-group w-25">
+          <label for="confirmEmail">Confirm Email:</label>
+          <input type="Email" name="confirmEmail" id="confEmail" class="form-control" onblur="ConfirmEmail();" placeholder="Confirm Your Email" required/>
+        </div>
+        <div class="form-group w-25">
+          <label for="phone_number">Phone Number:</label>
+          <input type="tel" name="phone_number" class="form-control" placeholder="Enter Your Phone Number" required/>
+        </div>
+
+        <div class="form-group w-25">
+          <label for="date_of_birth">Date of Birth:</label>
+          <input type="date" name="date_of_birth" class="form-control" required>
+        </div>
+
+
+        <p>Gender:</p>
+          <div class="radio">
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="FemaleGender" name="gender" value="Female" checked/>
+              <label class="custom-control-label" for="FemaleGender">Female</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="MaleGender" name="gender" value="Male">
+                <label class="custom-control-label" for="MaleGender">Male</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" class="custom-control-input" id="OtherGender" name="gender" value="Other">
+                <label class="custom-control-label" for="OtherGender">Other</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+              <input class="custom-control-input" id="GenderRadio" name="gender" value="Prefer Not To Say">
+                <label class="custom-control-label" for="GenderRadio">Prefer Not To Say</label>
+            </div>
+          </div>
+
+        <br>
+
+        <div class="form-group w-25">
+          <label for="country">Country:</label>
+          <input type="text" name="address" class="form-control" placeholder="Enter Your Country" required/>
+        </div>
+        <div class="form-group w-25">
+          <label for="address1">Address Line 1:</label>
+          <input type="text" name="address1" class="form-control" placeholder="Enter Your Address" required/>
+        </div>
+        <div class="form-group w-25">
+          <label for="address2">Address Line 2 (optional):</label>
+          <input type="text" name="address2" class="form-control" placeholder="Enter Your Address" required/>
+        </div>
+        <div class="form-group w-25">
+          <label for="city">City:</label>
+          <input type="text" name="city" class="form-control" placeholder="Enter Your City" required/>
+        </div>
+        <div class="form-group w-25">
+          <label for="state">State:</label>
+          <input type="text" class="form-control" list="states" name="state" placeholder="Enter Your State" required/>
+          <datalist id="states">
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </datalist>
+        </div>
+        <div class="form-group w-25">
+          <label for="postalCode">Postal Code:</label>
+          <input type="text" name="postalCode" class="form-control" placeholder="Enter Your Postal Code" required/>
+        </div>
+
+        <input type="submit" class="Submit" onclick="submitConfirmation();" id="flyerSubmit"/>
+
+      </form>
+
+
+      <footer class="footerContainer">
+      <div class="socialMedia" >
+        <h5>Social Media</h5>
+        <a href="https://www.facebook.com/" class="SocialLink" target="_blank"><img src="images/facebook.png" style="height: 35px; width: 35px;"></a>
+        <a href="https://www.instagram.com/?hl=en" class="SocialLink" target="_blank"><img src="images/instagram.png" style="height: 35px; width: 35px;"></a>
+        <a href="https://twitter.com/" class="SocialLink" target="_blank"><img src="images/twitter.png" style="height: 35px; width: 35px;"></a>
+        <a href="https://www.google.com/gmail/about/" class="SocialLink" target="_blank">Questions? Email Us!</a>
+      </div>
+      <div class="credits">
+        <h5>Credits</h5>
+          <a href="credits.html" class="sources SocialLink">Sources & etc.</a>
+          <a href="PrivacyPolicy.html" class="sources SocialLink">Privacy Policy</a> <!--[CREATE PAGE]-->
+          <a href="TermsConditions.html" class="sources SocialLink">Terms and Conditions</a>
+      </div>
+      </footer>
+
+    </body>
+
+</html>

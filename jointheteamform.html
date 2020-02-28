@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Join The Team</title>
+    <link rel="shortcut icon" href="images\Capture.PNG" />
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="stylesheets\generalCssDoc.css">
+    <link rel="stylesheet/less" type="text/css" href="stylesheets\Cssstyles.less" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"/> <!--fix the effects later-->
+
+    <!-- javascript -->
+    <script src="script.js"></script>
+
+      <div id="header"  class="navbar navbar-expand-sm">
+      <!--using this navbar to test and confirm bootstrap before changing-->
+        <div class=" navbar navbar-expand-sm ">
+          <a href="home.html" class="text-decoration-none " id="airlineSign">VENTUS AIRLINES</a>
+          <a href="aboutus.html" class="navigation nav-item text-decoration-none">ABOUT US</a>
+          <a href="jointheteam.html" class="navigation nav-item text-decoration-none">JOIN THE TEAM</a>
+          <div class="dropdown text-decoration-none">
+            <button class="navigation nav-item text-decoration-none" id="dropbtn">FLIGHT INFORMATION</button>
+            <div class="dropdown-content">
+              <a href="book.html" class="navigation nav-item text-decoration-none">BOOK</a>
+              <a href="mytrips.html" class="navigation nav-item text-decoration-none">MY TRIPS</a>
+              <a href="flightstatus.html" class="navigation nav-item text-decoration-none">FLIGHT STATUS</a>
+              <a href="timetable.html" class="navigation nav-item text-decoration-none">TIMETABLE</a>
+            </div>
+          </div>
+          <a href="frequentflyerprogram.html" class="navigation nav-item text-decoration-none">FREQUENT FLYER PROGRAM</a>
+          <button id="Login" class="navigation nav-item text-decoration-none" onclick="OpenLogin();">LOGIN</button>
+          <a href="signup.html" class="navigation nav-item text-decoration-none">SIGN UP</a>
+        </div>
+      </div>
+
+  </head>
+
+  <body>
+    <div class="siteBody">
+    <!--login stuff -->
+    <div class="PopLogin container" id="LoginForm" autocomplete="off">
+      <form action="">
+          <div class="form-group">
+            <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" placeholder="Enter email"/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+              <input type="password" class="form-control" name="password" placeholder="Enter Password" />
+          </div>
+          <a href="signup.html">Don't have an account? Sign up here.</a><br>
+        <button type="submit" class="loginBtn">Login</button>
+        <button type="button" class="CloseBtn" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+      <h1>Join the Team</h1>
+      <h4><i>Apply today and become a part of the team!</i></h4>
+
+    <form action=""   onsubmit=" submit()">
+
+        <h5>Contact Information</h5>
+
+      <div class="form-group w-25">
+        <label for="FirstName">First Name:</label>
+          <input type="text" name="FirstName" class="form-control" placeholder="Enter First Name" required/>
+      </div>
+      <div class="form-group w-25">
+        <label for="MiddleName">Middle Name:</label>
+          <input type="text" name="MiddleName" class="form-control" placeholder="Enter Middle Name"/>
+      </div>
+      <div class="form-group w-25">
+        <label for="LastName">Last Name:</label>
+          <input type="text" name="LastName" class="form-control" placeholder="Enter Last Name" required/>
+      </div>
+      <div class="form-group w-25">
+        <label for="Email">Email:</label>
+          <input type="email" name="Email" class="form-control" placeholder="Email" required/>
+      </div>
+      <div class="form-group w-25">
+        <label for="phone">Phone Number:</label>
+          <input type="tel" name="phone" class="form-control" placeholder="Enter Phone Number" required/>
+      </div>
+
+<!--[GENDER  RADIOS]-->
+<p>
+  Gender:
+</p>
+  <div class="radio" >
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="FemaleGender" name="Gender" value="Female" checked="checked"/>
+        <label class="custom-control-label" for="FemaleGender">Female</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="MaleGender" name="Gender" value="Male" />
+        <label class="custom-control-label" for="MaleGender">Male</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" class="custom-control-input" id="OtherGender" name="Gender" value="Other" />
+        <label class="custom-control-label" for="OtherGender">Other</label>
+    </div>
+    <div class="custom-control custom-radio custom-control-inline">
+      <input class="custom-control-input" id="GenderRadio" name="Gender" value="prefer not to" />
+        <label class="custom-control-label" for="GenderRadio">Prefer Not To Say</label>
+    </div>
+  </div>
+  <!--[application things]-->
+  <BR /> <p>
+    What are you applying for?
+  </p>
+    <div class="radio">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio"class="custom-control-input" id="flightattendant" name="position" value="flight attendant"onclick="AttendantApp();" checked="checked" />
+          <label class="custom-control-label" for="flightattendant">Flight Attendant</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio"class="custom-control-input" id="pilot" name="position" value="pilot"onclick="PilotApp();" />
+          <label class="custom-control-label" for="pilot">Pilot</label>
+      </div>
+    </div><br />
+
+      <!-- <label id="PilotApplication">
+        if theres more
+      </label> -->
+
+<!--[LANGUAGE CHECKBOXES]-->
+<div id="AttendantApplication">
+  <p>What languages (other than English) do you speak fluently?</p>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="spanish" id="spanish" name="language" />
+        <label class="custom-control-label" for="spanish">Spanish</label>
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="mandarin" id="mandarin" name="language2" />
+        <label class="custom-control-label" for="mandarin">Mandarin</label>
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="french" id="french" name="language3" />
+        <label class="custom-control-label" for="french">French</label>
+    </div>
+    <div class="custom-control custom-checkbox mb-3">
+      <input type="checkbox" class="custom-control-input" value="tagalog" id="tagalog" name="language4" />
+        <label class="custom-control-label" for="tagalog">Tagalog</label>
+    </div>
+</div>
+
+<!--[AUTHORIZATION]-->
+
+    <p>
+      Are you legally allowed to work in the United States?
+    </p>
+    <div class="radio">
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" class="custom-control-input" id="YESauthorized" name="authorized" value="Yes" />
+          <label class="custom-control-label" for="YESauthorized">Yes</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio"class="custom-control-input" id="NOauthorized" name="authorized" value="no" />
+          <label class="custom-control-label" for="NOauthorized">No</label>
+      </div>
+    </div><br />
+
+
+      <div class="form-group w-25">
+        <label for="education">Where did you receive your training?</label>
+          <input type="text" name="education" class="form-control" placeholder="Name the school here." required />
+      </div>
+      <h5>We recommend (but don't require) a resume, to show your qualifications.</h5>
+      <div class="form-group w-50">
+        <label for="Resume">Please paste a copy of your resume here:</label>
+          <textarea class="form-control" rows="15" name="Resume" placeholder="Paste your resume here." required></textarea>
+      </div>
+      <div class="custom-file w-50">
+        <input type="file" class="custom-file-input" id="customFile" />
+          <label class="custom-file-label" for="customFile">Or upload your resume here.</label>
+      </div>
+
+      <!--[for the file name]-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+//[for the file name to show]
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+    <br /><br />  <input type="submit" class="Submit"/>
+    </form>
+
+</div>
+    <footer class="footerContainer">
+    <div class="socialMedia" >
+      <h5>Social Media</h5>
+      <a href="https://www.facebook.com/" class="SocialLink" target="_blank"><img src="images/facebook.png" style="height: 35px; width: 35px;"></a>
+      <a href="https://www.instagram.com/?hl=en" class="SocialLink" target="_blank"><img src="images/instagram.png" style="height: 35px; width: 35px;"></a>
+      <a href="https://twitter.com/" class="SocialLink" target="_blank"><img src="images/twitter.png" style="height: 35px; width: 35px;"></a>
+      <a href="https://www.google.com/gmail/about/" class="SocialLink" target="_blank">Questions? Email Us!</a>
+    </div>
+    <div class="credits">
+      <h5>Credits</h5>
+        <a href="credits.html" class="sources SocialLink">Sources & etc.</a>
+        <a href="PrivacyPolicy.html" class="sources SocialLink">Privacy Policy</a> <!--[CREATE PAGE]-->
+        <a href="TermsConditions.html" class="sources SocialLink">Terms and Conditions</a>
+    </div>
+    </footer>
+
+  </body>
+
+</html>

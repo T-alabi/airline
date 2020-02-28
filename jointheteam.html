@@ -63,6 +63,8 @@
       <h1>Join the Team</h1>
       <h4><i>Apply today and become a part of the team!</i></h4>
 
+      <!-- <img src="images/jointheteam.jpg" style="max-width: 30%;"> -->
+
     <div>
       <h2>Requirements</h2>
 
@@ -98,137 +100,7 @@
       </ul>
     </div>
 
-<h2>Apply Here!</h2>
-
-    <form action=""   onsubmit=" submit()">
-
-        <label>Contact Information</label>
-
-      <div class="form-group w-25">
-        <label for="FirstName">First Name:</label>
-          <input type="text" name="FirstName" class="form-control" placeholder="Enter First Name" required/>
-      </div>
-      <div class="form-group w-25">
-        <label for="MiddleName">Middle Name:</label>
-          <input type="text" name="MiddleName" class="form-control" placeholder="Enter Middle Name"/>
-      </div>
-      <div class="form-group w-25">
-        <label for="LastName">Last Name:</label>
-          <input type="text" name="LastName" class="form-control" placeholder="Enter Last Name" required/>
-      </div>
-      <div class="form-group w-25">
-        <label for="Email">Email:</label>
-          <input type="email" name="Email" class="form-control" placeholder="Email" required/>
-      </div>
-      <div class="form-group w-25">
-        <label for="phone">Phone Number:</label>
-          <input type="tel" name="phone" class="form-control" placeholder="Enter Phone Number" required/>
-      </div>
-
-<!--[GENDER  RADIOS]-->
-<p>
-  Gender:
-</p>
-  <div class="radio" >
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="FemaleGender" name="Gender" value="Female" checked="checked"/>
-        <label class="custom-control-label" for="FemaleGender">Female</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="MaleGender" name="Gender" value="Male" />
-        <label class="custom-control-label" for="MaleGender">Male</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input type="radio" class="custom-control-input" id="OtherGender" name="Gender" value="Other" />
-        <label class="custom-control-label" for="OtherGender">Other</label>
-    </div>
-    <div class="custom-control custom-radio custom-control-inline">
-      <input class="custom-control-input" id="GenderRadio" name="Gender" value="prefer not to" />
-        <label class="custom-control-label" for="GenderRadio">Prefer Not To Say</label>
-    </div>
-  </div>
-  <!--[application things]-->
-  <BR /> <p>
-    What are you applying for?
-  </p>
-    <div class="radio">
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio"class="custom-control-input" id="flightattendant" name="position" value="flight attendant"onclick="AttendantApp();" checked="checked" />
-          <label class="custom-control-label" for="flightattendant">Flight Attendant</label>
-      </div>
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio"class="custom-control-input" id="pilot" name="position" value="pilot"onclick="PilotApp();" />
-          <label class="custom-control-label" for="pilot">Pilot</label>
-      </div>
-    </div><br />
-
-      <label id="PilotApplication">
-        <!--if theres more-->
-      </label>
-
-<!--[LANGUAGE CHECKBOXES]-->
-<div id="AttendantApplication">
-  <p>What languages (other than English) do you speak fluently?</p>
-    <div class="custom-control custom-checkbox mb-3">
-      <input type="checkbox" class="custom-control-input" value="spanish" id="spanish" name="language" />
-        <label class="custom-control-label" for="spanish">Spanish</label>
-    </div>
-    <div class="custom-control custom-checkbox mb-3">
-      <input type="checkbox" class="custom-control-input" value="mandarin" id="mandarin" name="language2" />
-        <label class="custom-control-label" for="mandarin">Mandarin</label>
-    </div>
-    <div class="custom-control custom-checkbox mb-3">
-      <input type="checkbox" class="custom-control-input" value="french" id="french" name="language3" />
-        <label class="custom-control-label" for="french">French</label>
-    </div>
-    <div class="custom-control custom-checkbox mb-3">
-      <input type="checkbox" class="custom-control-input" value="tagalog" id="tagalog" name="language4" />
-        <label class="custom-control-label" for="tagalog">Tagalog</label>
-    </div>
-</div>
-
-<!--[AUTHORIZATION]-->
-
-    <p>
-      Are you legally allowed to work in the United States?
-    </p>
-    <div class="radio">
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" class="custom-control-input" id="YESauthorized" name="authorized" value="Yes" />
-          <label class="custom-control-label" for="YESauthorized">Yes</label>
-      </div>
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio"class="custom-control-input" id="NOauthorized" name="authorized" value="no" />
-          <label class="custom-control-label" for="NOauthorized">No</label>
-      </div>
-    </div><br />
-
-
-      <div class="form-group w-25">
-        <label for="education">Where did you receive your training?</label>
-          <input type="text" name="education" class="form-control" placeholder="Name the school here." required />
-      </div>
-      <h5>We recommend (but don't require) a resume, to show your qualifications.</h5>
-      <div class="form-group w-50">
-        <label for="Resume">Please paste a copy of your resume here:</label>
-          <textarea class="form-control" rows="15" name="Resume" placeholder="Paste your resume here." required></textarea>
-      </div>
-      <div class="custom-file w-50">
-        <input type="file" class="custom-file-input" id="customFile" />
-          <label class="custom-file-label" for="customFile">Or upload your resume here.</label>
-      </div>
-
-      <!--[for the file name]-->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-//[for the file name to show]
-$(".custom-file-input").on("change", function() {
-  var fileName = $(this).val().split("\\").pop();
-  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-});
-</script>
-    <br /><br />  <input type="submit" class="Submit"/>
-    </form>
+<a href="jointheteamform.html" style="color: black;"><h4>Apply Here!</h4></a>
 
 </div>
     <footer class="footerContainer">
