@@ -64,10 +64,18 @@
     </div>
 
     <h1>Timetable</h1>
-    <a href="timetable.html" style="color: black;">Month View</a>
-    <a href="timetableweek.html" style="color: black;">Week View</a>
+    <select id="view" onchange="changeView();">
+      <option value="month">Month</option>
+      <option value="week">Week</option>
+    </select>
 
-    <h2>MARCH</h2>
+    <style>
+      #view {
+        float: right;
+      }
+    </style>
+
+    <h2>MARCH 2020</h2>
     <table>
       <tr>
         <th>Sunday</th>

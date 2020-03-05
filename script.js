@@ -4,9 +4,6 @@ var objPeople = [
   }
 ]
 
-// home
-
-
 // book
 function roundtrip() {
   document.getElementById("return").style.display = "block";
@@ -16,6 +13,18 @@ function roundtrip() {
 function oneway() {
   document.getElementById("return").style.display = "none";
   document.getElementById("date2").style.display = "none";
+}
+
+// timetable
+function changeView() {
+  var v = document.getElementById("view");
+  var viewselected = v.options[v.selectedIndex].value;
+  if (viewselected == "month") {
+    window.location.href = "timetable.html";
+  }
+  else if (viewselected == "week") {
+    window.location.href = "timetableweek.html";
+  }
 }
 
 // sign up
