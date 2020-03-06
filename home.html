@@ -255,27 +255,38 @@
     <h2 class="headingtext">RECOMMENDED DESTINATIONS</h2>
     <p>These are the most popular destinations right now! Take a look and see what you like.</p>
     <div class="destination" id="washingtondc">
-      <a href="book.html" target="_blank"><img src="images\WashingtonDC.jpg" style="height: 75%; width: 75%;"></a><br>
-      <p><span style="font-weight: bold;">Washington, D.C.</span><br>As springtime approaches, Washington D.C. blooms with gentle, pink cherry blossoms, dramatic in tranquility. Throughout March and April, the National Cherry Blossom Festival holds special events and tours. Washington, D.C. belongs on the top of your bucket list!</p>
+      <a href="book.html" target="_blank"><img src="images\WashingtonDC.jpg" class="image"><br>
+      <p class="description"><span>Washington, D.C.</span><br>As springtime approaches, Washington D.C. blooms with gentle, pink cherry blossoms. Throughout March and April, the National Cherry Blossom Festival holds special events and tours. Washington, D.C. belongs on the top of your bucket list!</p></a>
     </div>
     <div class="destination" id="niagarafalls">
-      <a href="book.html" target="_blank"><img src="images\niagara-falls.jpg" style="height: 75%; width: 75%;"></a><br>
-      <p><span style="font-weight: bold;">Niagara Falls, NY</span><br>The vast, majestic scenery of cascading ultramarine waters cools the feverish intensity of working life. Featuring boat tours, guided hikes, historical talks, and more, Niagara Falls has activities for everyone. Book a ticket and enjoy breathtaking views!</p>
+      <a href="book.html" target="_blank"><img src="images\niagara-falls.jpg" class="image"><br>
+      <p class="description"><span>Niagara Falls, NY</span><br>The vast, majestic scenery of cascading ultramarine waters cools the feverish intensity of working life. Featuring boat tours, guided hikes, historical talks, and more, Niagara Falls has activities for everyone. Book a ticket and enjoy breathtaking views!</p></a>
     </div>
     <div class="destination" id="fallingwater">
-      <a href="book.html" target="_blank"><img src="images\FallingWater_Laurel_Highlands_PA-0366-2-1080x720.jpg" style="height: 75%; width: 75%;"></a><br>
-      <p><span style="font-weight: bold;">Fallingwater - Mill Run, PA</span><br>Fallingwater, designed by Frank Lloyd Wright, is an ecological house built partially over a waterfall. Explore both the interior and the exterior of the house on a guided tour. As an architectural masterpiece, Fallingwater is breathtaking.</p>
+      <a href="book.html" target="_blank"><img src="images\FallingWater_Laurel_Highlands_PA-0366-2-1080x720.jpg" class="image"><br>
+      <p class="description"><span>Fallingwater - Mill Run, PA</span><br>Fallingwater, designed by Frank Lloyd Wright, is an ecological house built partially over a waterfall. Explore both the interior and the exterior of the house on a guided tour. As an architectural masterpiece, Fallingwater is breathtaking.</p></a>
     </div>
   </div>
 
   <style>
     .destination {
-      padding-top: 10px;
-      margin: 10px;
+      margin: 15px;
       display: inline-block;
-      outline-style: solid;
-      outline-width: medium;
-      outline-color: #15273a;
+    }
+    .description {
+      padding: 10px 5px;
+      background-color: #101f2e; /* #15273a; */
+      color: #a9b5c2;
+      font-size: 13px;
+    }
+    span {
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    .image {
+      height: 100%;
+      width: 100%;
     }
     #washingtondc {
       height: 30%;
