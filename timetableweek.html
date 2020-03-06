@@ -65,7 +65,7 @@
 
     <h1>Timetable</h1>
 
-    <select id="view" onchange="changeView();">
+    <select class="btn btn-secondary dropdown-toggle" id="view" onchange="changeView();">
       <option value="week">Week</option>
       <option value="month">Month</option>
     </select>
@@ -73,14 +73,20 @@
     <div>
       <h2 class = "timetableheading">MARCH 2020</h2>
       <h4 class = "timetableheading" id="dates">3/16 to 3/22</h4>
-      <a class = "timetableheading" onclick="plusWeek(-1)">&#10094;</a>
-      <a class = "timetableheading" onclick="plusWeek(1)">&#10095;</a>
+      <button class = "timetableheading" onclick="plusWeek(-1)">&#10094;</button>
+      <button class = "timetableheading" onclick="plusWeek(1)">&#10095;</button>
     </div>
 
     <style>
       .timetableheading {
         display: inline-block;
         margin-right: 25px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
       }
       #view {
         float: right;
