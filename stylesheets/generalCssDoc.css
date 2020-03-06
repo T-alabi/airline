@@ -116,37 +116,12 @@ padding: 15px 15px 10px 15px;
   background: #f1f1f1;
 }
 /* home */
-.shape {
-  height: 50px;
-  width: 500px;
-  background-color: #15273a;
-  border-radius: 75px;
-  margin-bottom: 30px;
-  float: left;
-  margin-right: 20px;
-  padding-left: 20px;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  align-items: center;
-  vertical-align: center;
-}
-.shape2 {
-  height: 50px;
-  width: 500px;
-}
-.shape3 {
-  height: 50px;
-  width: 310px;
-}
-.shape4 {
-  height: 50px;
-  width: 355px;
-}
 .headingtext {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   text-align: center;
 }
+/*
 .backgroundimage {
   position: relative;
   text-align: center;
@@ -164,19 +139,10 @@ padding: 15px 15px 10px 15px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+*/
 .home-content{
   font-family: 'Lato', sans-serif;
   text-align: center;
-}
-.Destination {
-  padding: 14px 25px;
-  margin: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  outline-style: solid;
-  outline-width: medium;
-  outline-color: #15273a;
 }
 /* about us */
 .aboutus{
@@ -238,6 +204,7 @@ a {
 a:hover {
   color: #ff8f29;
 }
+/*
 .Destination:link {
   color: black;
   text-decoration: none;
@@ -249,6 +216,7 @@ a:hover {
 .Destination:hover {
   color: #ff8f29;
 }
+*/
 .SocialLink:link {
   color: white;
   text-decoration: none;
