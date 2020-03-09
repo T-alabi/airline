@@ -121,25 +121,10 @@ padding: 15px 15px 10px 15px;
   font-weight: bold;
   text-align: center;
 }
-/*
-.backgroundimage {
-  position: relative;
-  text-align: center;
-  color: white;
+/*table Style*/
+th, td{
+  padding: 4px;
 }
-#img {
-  max-height: 100%;
-  max-width: 100%;
-}
-.imagetext {
-  font-size: 45px;
-  white-space: nowrap;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
 .home-content{
   font-family: 'Lato', sans-serif;
   text-align: center;
