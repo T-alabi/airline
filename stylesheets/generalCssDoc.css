@@ -121,6 +121,25 @@ padding: 15px 15px 10px 15px;
   font-weight: bold;
   text-align: center;
 }
+.textleft{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+.textright{
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: right;
+}
+/*arrow stuff*/
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid  #15273a;
+}
 /*table Style*/
 th, td{
   padding: 4px;
