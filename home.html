@@ -236,9 +236,8 @@
     <br />
   <div class="clearfix">
     <img src="images\airplane1.jpg" style="padding: 10px; "class="float-right w-50" />
-    <h2 style="vertical-align: middle;">Join The Fun</h2>
-    <h3 style="vertical-align: middle;">
-      <i>Learn more about<br /> the frequent flyer program today</i></h3>
+    <h2>Join The Fun</h2>
+    <h3><i>Learn more about<br /> the frequent flyer program today</i></h3>
       <a href="frequentflyerprogram.html"><p class="arrow-right"></p></a>
   </div> <!--[center align text if possible, if not make picture smaller]-->
 
@@ -246,9 +245,13 @@
 
     <h2 class="headingtext">RECOMMENDED DESTINATIONS</h2>
     <p>These are the most popular destinations right now! Take a look and see what you like.</p>
-    <div class="destination" id="washingtondc">
-      <a href="book.html" target="_blank"><img src="images\WashingtonDC.jpg" class="image"><br>
-      <p class="description"><span>Washington, D.C.</span><br>As springtime approaches, Washington D.C. blooms with gentle, pink cherry blossoms. Throughout March and April, the National Cherry Blossom Festival holds special events and tours. Washington, D.C. belongs on the top of your bucket list!</p></a>
+    <div class=" clearfix" style="background-color:#15273a">
+      <img src="images\WashingtonDC.jpg" style="padding: 10px; "class="float-left w-50" />
+        <p class="descriptiondark" style=""><span>Washington, D.C.</span><br>As springtime approaches, Washington D.C. blooms with gentle, pink cherry blossoms. Throughout March and April, the National Cherry Blossom Festival holds special events and tours. Washington, D.C. belongs on the top of your bucket list!</p></a>
+        <p class="descriptiondark">
+        <a href="book.html" class="creditlink descriptiondark">Book today!</a>
+        </p>
+      </div><br />
     </div>
     <div class="destination" id="niagarafalls">
       <a href="book.html" target="_blank"><img src="images\niagara-falls.jpg" class="image"><br>
@@ -270,6 +273,11 @@
       background-color: #101f2e; /* #15273a; */
       color: #a9b5c2;
       font-size: 13px;
+    }
+    .descriptiondark {
+      padding: 10px 5px;
+      color: white;
+      font-size: 25px;
     }
     span {
       color: white;
