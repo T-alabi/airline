@@ -1,15 +1,8 @@
-
 .siteBody {
   padding-left: 50px;
   padding-right: 55px;
   margin-bottom: 0px;
 }
-/*caption text*/
-.text{
-  background-color: black;
-  color: #ff8f29;
-}
-
 /*login*/
 #displayHere{
   background: #15273a;
@@ -115,22 +108,7 @@ padding: 15px 15px 10px 15px;
   border: none;
   background: #f1f1f1;
 }
-/* home */
-.headingtext {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  text-align: center;
-}
-.textleft{
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  text-align: left;
-}
-.textright{
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  text-align: right;
-}
+
 /*arrow stuff*/
 .arrow-right {
   width: 0;
@@ -144,14 +122,7 @@ padding: 15px 15px 10px 15px;
 th, td{
   padding: 4px;
 }
-.home-content{
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-}
-/* about us */
-.aboutus{
-  /* font-family: 'Lato', sans-serif; */
-}
+
 /*forms*/
 .form-control{
   width: 25%;
