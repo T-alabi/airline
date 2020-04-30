@@ -99,3 +99,4 @@ function submitConfirmation(){
 }
 /*sql and DB stuff*/
 /*slides*/
+/*footer replacement*/
