@@ -18,5 +18,8 @@ var html = '<div id="header"  class="navbar navbar-expand-sm"> ' +
     '</div>' +
   '</div>'
            ;
-
 document.getElementById('nav').innerHTML = html;
+
+var footer =
+
+document.getElementById('').innerHTML = footer; 
