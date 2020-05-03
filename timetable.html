@@ -61,8 +61,8 @@
     </style>
 
     <h2 id="monthName">MARCH 2020</h2>
-    <button onclick="plusMonth(-1)">&#10094;</button>
-    <button onclick="plusMonth(1)">&#10095;</button>
+    <button class = "timetableheading" onclick="plusMonth(-1)">&#10094;</button>
+    <button class = "timetableheading" onclick="plusMonth(1)">&#10095;</button>
 
     <table class="table month">
       <thead class="thead-dark">
@@ -362,6 +362,16 @@
       }
       #flightschedule {
         font-size: 12px;
+      }
+      .timetableheading {
+        display: inline-block;
+        margin-right: 25px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
       }
     </style>
 
