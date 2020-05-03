@@ -97,6 +97,9 @@ function submitConfirmation(){
   document.getElementById("frequentFlyerForm").style.display= "none";
   document.getElementById("").style.display= "block";
 }
-/*sql and DB stuff*/
-/*slides*/
-/*footer replacement*/
+/*seats booking classes*/
+function FirstClassSeats() {
+document.getElementById("firstclass").style.display= "block";
+document.getElementById("BusinessClass").style.display="none";
+document.getElementById("econclass").style.display="none";
+}

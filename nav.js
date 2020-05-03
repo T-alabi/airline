@@ -36,3 +36,11 @@ var footer =
 '</div>'
           ;
 document.getElementById('footerContainer').innerHTML = footer;
+/*seat not avaoabe alert*/
+function notAvailableAlert (){
+  alert("This seat is not available to allow for social distancing during the flight. Please click an available seat, indicated by the light grey color.");
+}
+
+function ConfrimSeat() {
+  document.getElementById('ConfirmMessage').innerHTML = "One seat has been selected, fill out the information below and submit."
+}
