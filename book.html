@@ -61,27 +61,36 @@
 
     </div>
     <!--seating chart buttons-->
+    <h5>What class would you like to fly?</h5>
     <p style="font-size: 15px">
       Please note all seating groups of 2 are emergency exit seats
     </p>
 
-    <div class="radio" style="Margin-left: 15px;">
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio"class="custom-control-input" id="firstseats" onclick="FirstClassSeats()" checked="checked" />
-          <label class="custom-control-label" for="firstseats">First Class</label>
-      </div>
-      <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio"class="custom-control-input" id="econseats"onclick="EconClassSeats();" />
-          <label class="custom-control-label" for="pilot">Economy Class</label>
-      </div>
-    </div><br />
+    <form>
+      <div class="radio" style="Margin-left: 15px;">
 
-    <div id="firstclass"class=" row">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio"class="custom-control-input" name="class" value="first" id="firstseats" onclick="FirstClassSeats()" />
+            <label class="custom-control-label" for="firstseats">First Class</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio"class="custom-control-input" name="class" value="business" id="bussseats" onclick="BussClassSeats()" />
+          <label class="custom-control-label" for="bussseats">Business Class</label>
+        </div>
+
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" class="custom-control-input" name="class" value="econ" id="econseats" onclick="EconClassSeats()" />
+          <label class="custom-control-label" for="econseats">Economy Class</label>
+        </div>
+      </div><br />
+    </form>
+
+    <div id="firstclass"class="row" style="display: none;">
       <h4 style="Margin-left: 15px;">First class seats</h4>
       <div class="left">
-        <p>
-          Side A
-        </p>
+        <p>Side A</p>
+
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">1</button>
         <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">2</button>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();" >3</button><br />
@@ -97,11 +106,8 @@
         <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
       </div>
-
       <div class="right">
-        <p>
-          Side B
-        </p>
+        <p>Side B</p>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">1</button>
         <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">2</button>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();" >3</button><br />
@@ -120,12 +126,11 @@
       <p id="ConfirmMessage"></p>
     </div>
 
-    <div id="BusinessClass" class=" row">
+    <div id="businessClass"class="row" style="display: none;">
       <h4 style="Margin-left: 15px;">Business class seats</h4>
       <div class="left">
-        <p>
-          Side A
-        </p>
+        <p>Side A</p>
+
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">1</button>
         <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">2</button>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();" >3</button><br />
@@ -141,7 +146,46 @@
         <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
       </div>
+      <div class="right">
+        <p>Side B</p>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">1</button>
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">2</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();" >3</button><br />
 
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();" >4</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">5</button><br />
+
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">6</button>
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">7</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">8</button><br />
+
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">9</button>
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
+      </div>
+      <p id="ConfirmMessage"></p>
+    </div>
+
+    <div id="econclass"class="row" style="display:none;">
+      <h4 style="Margin-left: 15px;">Economy class seats</h4>
+      <div class="left">
+        <p>Side A</p>
+
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">1</button>
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">2</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();" >3</button><br />
+
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();" >4</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">5</button><br />
+
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">6</button>
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">7</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">8</button><br />
+
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">9</button>
+        <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
+        <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
+      </div>
       <div class="right">
         <p>
           Side B
@@ -161,53 +205,9 @@
         <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
       </div>
-
-      <div id= "econclass"class=" row">
-        <h4 style="Margin-left: 20px;">Economy class seats</h4>
-        <div class="left">
-          <p>
-            Side A
-          </p>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">1</button>
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">2</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();" >3</button><br />
-
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();" >4</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">5</button><br />
-
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">6</button>
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">7</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">8</button><br />
-
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">9</button>
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
-        </div>
-
-        <div class="right">
-          <p>
-            Side B
-          </p>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">1</button>
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">2</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();" >3</button><br />
-
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();" >4</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">5</button><br />
-
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">6</button>
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">7</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">8</button><br />
-
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">9</button>
-          <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
-          <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
-        </div>
-        <p id="ConfirmMessage"></p>
-      </div>
-
       <p id="ConfirmMessage"></p>
     </div>
+
 
     <div>
       <p>

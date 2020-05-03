@@ -99,7 +99,17 @@ function submitConfirmation(){
 }
 /*seats booking classes*/
 function FirstClassSeats() {
-document.getElementById("firstclass").style.display= "block";
-document.getElementById("BusinessClass").style.display="none";
+document.getElementById("firstclass").style.display= "";
+document.getElementById("businessClass").style.display="none";
 document.getElementById("econclass").style.display="none";
+}
+function BussClassSeats() {
+  document.getElementById("businessClass").style.display= "";
+  document.getElementById("firstclass").style.display= "none";
+  document.getElementById("econclass").style.display="none";
+}
+function EconClassSeats() {
+  document.getElementById("econclass").style.display= "";
+  document.getElementById("firstclass").style.display= "none";
+  document.getElementById("businessClass").style.display="none";
 }

@@ -83,16 +83,6 @@
 #Login:hover {
   color: #ff8f29;
 }
-#BusinessClass{
-  display: none;
- border: solid #ff8f29;
- background-color: #ff8f29;
-}
-#econclass{
-  display: none;
- border: solid #ff8f29;
- background-color: #ff8f29;
-}
 .PopLogin{
   display: none;
  border: solid #ff8f29;
