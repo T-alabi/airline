@@ -227,8 +227,9 @@
           <input type="date" name="flightDate" class="form-control" required/>
         </div>
 
-        <input type="submit" class="Submit" onclick="submitConfirmation();" id="flyerSubmit"/>
+        <input type="submit" class="Submit" onclick="flightBooked();" id="flyerSubmit"/>
       </form>
+      <h5 id="booked"></h5>
     </div>
 <style>
 .left{
@@ -238,7 +239,9 @@
 .right{
   align-items: right;
   padding: 25px;
-
+}
+#booked{
+  color: #15273a;
 }
 </style>
 

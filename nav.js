@@ -20,7 +20,8 @@ var html = '<div id="header"  class="navbar navbar-expand-sm"> ' +
            ;
 document.getElementById('nav').innerHTML = html;
 /*footer replacement*/
-var footer =
+var footer;
+footer =
 '<div class="socialMedia" >' +
   '<h5>Social Media</h5>'+
   '<a href="https://www.facebook.com/" class="SocialLink" target="_blank"><img src="images/facebook.png" style="height: 35px; width: 35px;"></a>'+

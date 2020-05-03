@@ -113,3 +113,6 @@ function EconClassSeats() {
   document.getElementById("firstclass").style.display= "none";
   document.getElementById("businessClass").style.display="none";
 }
+function flightBooked() {
+  document.getElementById("booked").innerHTML = "Thank you for booking a flight with Ventus Airlines"
+}
