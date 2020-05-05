@@ -125,5 +125,4 @@ document.getElementById("tempText").style.display= "none";
 function tripstat() {
   document.getElementById("tempText2").style.display= "none";
   document.getElementById("status").innerHTML = "Oh no! This trip has been cancelled. Please check your email for detais on your refund"
-
 }
