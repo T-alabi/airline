@@ -114,15 +114,43 @@ function EconClassSeats() {
   document.getElementById("businessClass").style.display="none";
 }
 function flightBooked() {
-  document.getElementById("booked").innerHTML = "Thank you for booking a flight with Ventus Airlines"
+document.getElementById("tempText").style.display="none";
+//var firstclass;
+//var businessClass;
+//var econclass;
+var firstName;
+var lastName;
+var date;
+//var firstclass = document.getElementById("firstclass").value;
+//var businessClass = document.getElementById("businessClass").value;
+//var econclass = document.getElementById("econclass").value;
+var firstName = document.getElementById("firstName").value;
+var lastName = document.getElementById("lastName").value;
+var date = document.getElementById("date").value;
+document.getElementById("flightshere").innerHTML = firstName + '  '+ lastName + '<br/>' + ' You Have Booked One Flight On ' + date;
 }
 
 function findTrips() {
 document.getElementById("tempText").style.display= "none";
-  document.getElementById("flightshere").innerHTML = "You have not been on any flight. Check out the home page for popular destinations"
+//document.getElementById("flightshere").innerHTML = "You have not been on any flight. Check out the home page for popular destinations"
+var firstName;
+var lastName;
+var confirmationNumber;
+var firstName = document.getElementById("firstName").value;
+var lastName = document.getElementById("lastName").value;
+var confirmationNumber = document.getElementById("confirmationNumber").value;
+document.getElementById("flightshere").innerHTML = firstName + ' ' + lastName + '<br/>' + 'You Have Been On 1 Flight' + '<br/>' + confirmationNumber + ' From: Newark Liberty International Airport ' + '<br/>' + 'To: John F. Kennedy International Airport ';
 }
 
 function tripstat() {
   document.getElementById("tempText2").style.display= "none";
-  document.getElementById("status").innerHTML = "Oh no! This trip has been cancelled. Please check your email for detais on your refund"
+  var flightNum;
+  var fromlocations;
+  var toLocations;
+  var date;
+  var date = document.getElementById("date").value;
+  var toLocations = document.getElementById("toLocations").value;
+  var fromlocations = document.getElementById("fromlocations").value;
+  var flightNum = document.getElementById("flightNumber").value;
+  document.getElementById("status").innerHTML = ' Flight number ' + flightNum + ' on ' + date + ' from ' + fromlocations + ' to ' + toLocations + ' has been cancelled ';
 }

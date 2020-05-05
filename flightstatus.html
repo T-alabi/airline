@@ -54,7 +54,7 @@
       <div class="row">
         <div class="form-group col w-25">
           <label for="fromLocations">Origin:</label>
-          <input type="text" class="form-control" list="from-locations" name="from" placeholder="Where from?" required />
+          <input type="text" id="fromlocations" class="form-control" list="from-locations" name="from" placeholder="Where from?" required />
           <datalist id="from-locations">
             <option value="Bradley International Airport"></option> <!-- Connecticut -->
             <option value="Connecticut Airport Authority"></option> <!-- Connecticut -->
@@ -81,7 +81,7 @@
 
         <div class="form-group col w-25">
           <label for="toLocations">Destination:</label>
-          <input type="text" class="form-control" list="to-locations" name="toLocations" placeholder="Where to?" required />
+          <input type="text" id ="toLocations" class="form-control" list="to-locations" name="toLocations" placeholder="Where to?" required />
           <datalist id="to-locations">
             <option value="Bradley International Airport"></option> <!-- Connecticut -->
             <option value="Connecticut Airport Authority"></option> <!-- Connecticut -->
@@ -118,7 +118,7 @@
       <button type="button" class="Submit" onclick="tripstat();">Search</button><br /><br /><br />
     </form>
 
-    <div class="tripsmessage w-50 "  style="text-align:center;">
+    <div class="tripsmessage w-75 "  style="text-align:center;">
       <p id="status">
         <p id="tempText2">
           Check Flight Status Above.

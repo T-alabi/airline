@@ -205,7 +205,6 @@
         <button type="button" class="btn btn-sm btn-elegant" onclick="notAvailableAlert();">10</button>
         <button type="button" class="btn btn-sm btn-light" onclick="ConfrimSeat();">11</button><br />
       </div>
-      <p id="ConfirmMessage"></p>
     </div>
 
 
@@ -216,21 +215,31 @@
       <form style="margin-left: 25px;">
         <div class="form-group w-25">
           <label for="firstName">First Name:</label>
-          <input type="text" name="first_name" class="form-control" placeholder="Enter Your first name" required/>
+          <input type="text" id="firstName" name="first_name" class="form-control" placeholder="Enter Your first name" required/>
         </div>
         <div class="form-group w-25">
           <label for="lastName">Last Name:</label>
-          <input type="text" name="last_name" class="form-control" placeholder="Enter Your last name" required/>
+          <input type="text" id="lastName" name="last_name" class="form-control" placeholder="Enter Your last name" required/>
         </div>
         <div class="form-group w-25">
           <label for="date">Date of Flight</label>
-          <input type="date" name="flightDate" class="form-control" required/>
+          <input type="date" id="date" name="flightDate" class="form-control" required/>
         </div>
 
-        <input type="submit" class="Submit" onclick="flightBooked();" id="flyerSubmit"/>
+        <button type="button" class="Submit" onclick="flightBooked();">Submit</button> <br /><br /><br />
       </form>
-      <h5 id="booked"></h5>
+
+
+    <div style="margin-left: 20px;"  >
+      <div class="bookmessage w-75 "  style="text-align:center;">
+        <p id="flightshere" class="bookmessage">
+          <p id="tempText">
+            Search Your Flights Now! Use the form above.
+          </p>
+        </p>
+      </div>
     </div>
+
 <style>
 .left{
   align-items: left;
@@ -240,9 +249,11 @@
   align-items: right;
   padding: 25px;
 }
-#booked{
+.bookmessage {
+  padding: 20px;
   color: #15273a;
-}
+  font-size: 25px;
+  background-color: #ff8f29;
 </style>
 
     <footer class="footerContainer" id="footerContainer"></footer>
