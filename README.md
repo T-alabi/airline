@@ -4,7 +4,7 @@
   Academy For Information Technology Scotch Plains, New Jersey
 
 <h2> Goal </h2>
-Create fuctional and relaitic discout airline website 
+Create functional and realistic discount airline website
 
 <h2>Features</h2>
 Animated home page slide show

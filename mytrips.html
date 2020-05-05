@@ -68,9 +68,26 @@
 
       <br>
 
-      <input type="submit" name="Search" class="Submit" value="Search"/>
+      <button type="button" class="Submit" onclick="findTrips();">Search</button><br /><br /><br />
     </form>
+
+    <div class="tripsmessage w-50 "  style="text-align:center;">
+      <p id="flightshere" class="tripsmessage">
+        <p id="tempText">
+          Search Your Flights Now! Use the form above.
+        </p>
+      </p>
+    </div>
+
   </div>
+  <style>
+  .tripsmessage {
+    padding: 20px;
+    color: #15273a;
+    font-size: 25px;
+    background-color: #ff8f29;
+  }
+  </style>
 
   <footer class="footerContainer" id="footerContainer"></footer>
       <script src="nav.js"></script>

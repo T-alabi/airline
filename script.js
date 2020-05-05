@@ -116,3 +116,14 @@ function EconClassSeats() {
 function flightBooked() {
   document.getElementById("booked").innerHTML = "Thank you for booking a flight with Ventus Airlines"
 }
+
+function findTrips() {
+document.getElementById("tempText").style.display= "none";
+  document.getElementById("flightshere").innerHTML = "You have not been on any flight. Check out the home page for popular destinations"
+}
+
+function tripstat() {
+  document.getElementById("tempText2").style.display= "none";
+  document.getElementById("status").innerHTML = "Oh no! This trip has been cancelled. Please check your email for detais on your refund"
+
+}

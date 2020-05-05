@@ -115,8 +115,25 @@
         <input type="date" class="form-control" id="date" placeholder="What day is your flight on?" required></input>
       </div>
 
-      <input type="submit" name="Search" class="Submit" value="Search"/>
+      <button type="button" class="Submit" onclick="tripstat();">Search</button><br /><br /><br />
     </form>
+
+    <div class="tripsmessage w-50 "  style="text-align:center;">
+      <p id="status">
+        <p id="tempText2">
+          Check Flight Status Above.
+        </p>
+      </p>
+    </div>
+
+    <style>
+    .tripsmessage {
+      padding: 20px;
+      color: #15273a;
+      font-size: 25px;
+      background-color: #ff8f29;
+    }
+    </style>
 
     <footer class="footerContainer" id="footerContainer"></footer>
         <script src="nav.js"></script>
