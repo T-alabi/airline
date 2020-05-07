@@ -23,10 +23,10 @@
     <nav id="nav"></nav>
     <script src="nav.js"></script>
 
-    </head>
+  </head>
 
-    <body>
-      <div class="siteBody">
+  <body>
+    <div class="siteBody">
 
     <!--login stuff -->
     <div class="PopLogin container" id="LoginForm" autocomplete="off">
@@ -49,38 +49,37 @@
     <!--[SLIDE SHOW STUFF]-->
     <div class="slideshow-container">
       <div class="mySlides">
-        <div class="numbertext" style="color: black;">1 / 6</div>
-        <img src="images/carousel1.png" style="width:100%; max-height: 600px;">
+        <div class="numbertext" style="color: white;">1 / 6</div>
+        <img src="images/carousel1.png" style="width: 100%;">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext">2 / 6</div>
-        <img src="images/carousel2.png" style="width:100%; max-height: 500px;">
+        <div class="numbertext" style="color: black;">2 / 6</div>
+        <img src="images/carousel2.png" style="width: 100%;">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext" style="color: black;">3 / 6</div>
-        <img src="images/carousel3.png" style="width:100%; max-height: 500px;">
+        <div class="numbertext" style="color: white;">3 / 6</div>
+        <img src="images/carousel3.png" style="width: 100%;">
       </div>
 
       <div class="mySlides">
         <div class="numbertext" style="color: black;">4 / 6</div>
-        <img src="images/carousel4.png" style="width:100%; max-height: 500px;">
+        <img src="images/carousel4.png" style="width: 100%;">
       </div>
 
       <div class="mySlides">
-        <div class="numbertext" style="color: black;">5 / 6</div>
-        <img src="images/carousel5.png" style="width:100%; max-height: 500px;">
+        <div class="numbertext" style="color: white;">5 / 6</div>
+        <img src="images/carousel5.png" style="width: 100%;">
       </div>
 
       <div class="mySlides">
         <div class="numbertext" style="color: black;">6 / 6</div>
-        <img src="images/carousel6.png" style="width:100%; max-height: 500px;">
+        <img src="images/carousel6.png" style="width: 100%;">
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
 
     <br>
@@ -98,8 +97,6 @@
       * {box-sizing:border-box}
 
       .slideshow-container {
-        width: 1000px;
-        max-height: 750px;
         position: relative;
         margin: auto;
       }
@@ -225,26 +222,59 @@
       employees. Thank you for understanding, and please stay safe.
     </div>
 
-    <div>
-      <h3><a href="book.html" class="creditLink" target="_blank" >Click here to book a flight!</a></h3>
+    <div class = "homecontent">
 
-  <div class = "homecontent">
+    <!-- <h2 class="headingtext">JOIN THE FUN</h2> -->
+
+    <!-- <div id = "bookaflightsection"> class="float-left w-50"
+      <img src="images\airplane1.jpg" id="airplaneimage"/>
+      <h3><a href="book.html" class="creditLink" target="_blank">Book a flight!</a></h3>
+        <a href="frequentflyerprogram.html"><p class="arrow-right"></p></a>
+    </div> -->
 
     <div class="clearfix">
-      <img src="images\airplane1.jpg" style="padding: 10px; "class="float-right w-50" />
-      <h2 class="headingtext">JOIN THE FUN</h2>
-      <h3><i>Learn more about<br /> the frequent flyer program today</i></h3>
-        <a href="frequentflyerprogram.html"><p class="arrow-right"></p></a>
-    </div> <!--[center align text if possible, if not make picture smaller]-->
+      <img src="images\airplane3.jpg" id="airplaneimage"/>
+      <div id = "frequentflyerprogramsection">
+        <h4>Learn more about our <br><i>Frequent Flyer Program</i><a href="frequentflyerprogram.html" style="color: white;">   &#10095;</a></h4>
+        <p>With this exclusive feature of <i>Ventus Airlines</i>, you can earn miles that can total up to a free trip! You can spend your miles any way you want.</p>
+      </div>
+    </div>
 
-<!--safe practices here-->
+    <style>
+      #airplaneimage {
+        padding: 10px;
+        width: 900px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #bookaflightsection {
+        display: inline-block;
+      }
+
+      #frequentflyerprogramsection {
+        color: white;
+        background-color: #101f2e; /* #ff8f29; #101f2e;*/
+        padding: 15px;
+        width: 330px;
+        display: inline-block;
+        position: absolute;
+        left: 225px;
+        top: 1045px;
+      }
+    </style>
+
+    <br>
+
+    <!--safe practices here-->
     <h2 class="headingtext">SAFE PRACTICES</h2>
     <p class="text-center"><i>Ventus Airlines</i> will continue to follow these safe practices until further notice. </p>
 
     <div class="clearfix descriptionlight">
       <img src="images\gloves.png" style="padding: 15px; width: 10px; height: 275px;" class="float-right w-25" />
       <h2 class="">Personal Protective Equipment </h2>
-      <p>We encourage passengers and employees of Ventus Airlines to bring and use
+      <p>We encourage passengers and employees of <i>Ventus Airlines</i> to bring and use
       personal protective equipment. In the absence of masks or gloves, they will be distributed to passengers.
       <i>This does not mean you can take an unlimited amount of the equiptment</i>. Please stay safe by keeping
       your mask and gloves on at all times.</p>
@@ -259,11 +289,10 @@
         distance between themselves and others<i>- this includes families. </i> </p>
     </div>
 
-
     <div class="clearfix">
       <br>
-      <h2 class="">Thank you!</h2>
       <img src="images\heart.png" style="padding: 10px; "class="float-right w-25" />
+      <h2 class="">Thank you!</h2>
       <p class="descriptionlight">Thank you for cooperating with our terms. We at <i>Ventus Airlines</i>
         will continue to support our customers, in the air or not. We want to thank all front line and
         medical workers, which is why <strong>all medical workers will be receiving
@@ -275,17 +304,17 @@
     <p class="text-center">These are the most popular destinations right now! Take a look and see what you like.</p>
 
     <div class="clearfix" style="background-color:#15273a">
-      <a href="book.html" target="_blank" class="descriptiondark"><img src="images\WashingtonDC.jpg" style="padding: 10px; "class="float-left w-50" />
+      <a href="book.html" target="_blank" class="descriptiondark"><img src="images\WashingtonDC.jpg" id = "image" style="padding: 10px;" class="float-left w-50" />
       <p class="descriptiondark"><span id = "namedark">Washington, D.C.</span><br>As springtime approaches, Washington D.C. blooms with gentle, pink cherry blossoms. Throughout March and April, the National Cherry Blossom Festival holds special events and tours. Washington, D.C. belongs on the top of your bucket list! Book today!</p></a>
     </div>
 
-    <div class="clearfix" style="background-color: white;">
-      <a href="book.html" target="_blank" class="descriptionlight"><img src="images\niagara-falls.jpg" style="padding: 10px; "class="float-right w-50" />
+    <div class="clearfix" style="background-color: white; text-align: right;">
+      <a href="book.html" target="_blank" class="descriptionlight"><img src="images\niagara-falls.jpg" id = "image" style="padding: 10px; "class="float-right w-50" />
       <p class="descriptionlight"><span id = "namelight">Niagara Falls, NY</span><br>The vast, majestic scenery of cascading ultramarine waters cools the feverish intensity of working life. Featuring boat tours, guided hikes, historical talks, and more, Niagara Falls has activities for everyone. Book a ticket and enjoy breathtaking views! Book today!</p></a>
     </div>
 
     <div class="clearfix" style="background-color:#15273a">
-        <a href="book.html" target="_blank" class="descriptiondark"><img src="images\FallingWater_Laurel_Highlands_PA-0366-2-1080x720.jpg" style="padding: 10px; "class="float-left w-50" />
+        <a href="book.html" target="_blank" class="descriptiondark"><img src="images\FallingWater_Laurel_Highlands_PA-0366-2-1080x720.jpg" id = "image" style="padding: 10px; "class="float-left w-50" />
         <p class="descriptiondark"><span id = "namedark">Fallingwater - Mill Run, PA</span><br>Fallingwater, designed by Frank Lloyd Wright, is an ecological house built partially over a waterfall. Explore both the interior and the exterior of the house on a guided tour. As an architectural masterpiece, Fallingwater is breathtaking! Book today!</p></a>
     </div>
 
@@ -317,7 +346,7 @@
     .descriptiondark {
       padding: 10px 5px;
       color: white;
-      font-size: 25px;
+      font-size: 25px
     }
     #namelight {
       color: black;
@@ -329,26 +358,17 @@
       font-size: 17px;
       font-weight: bold;
     }
-    .image {
+    /* .image {
       height: 100%;
       width: 100%;
     }
-    #washingtondc {
+    #image {
       height: 30%;
       width: 30%;
-    }
-    #niagarafalls {
-      height: 30%;
-      width: 30%;
-    }
-    #fallingwater {
-      height: 30%;
-      width: 30%;
-    }
+    } */
   </style>
 
 <!--[BODY DIV]-->
-</div >
     <footer class="footerContainer" id="footerContainer"></footer>
         <script src="nav.js"></script>
   </body>
